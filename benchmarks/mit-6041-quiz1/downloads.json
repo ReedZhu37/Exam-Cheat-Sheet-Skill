@@ -1,0 +1,214 @@
+{
+  "sources": [
+    {
+      "source_id": "review",
+      "title": "MIT 6.041SC review",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/337c2b848282f31191196653a3fd7a45_MIT6_041SCF13_quiz01_revi.pdf",
+      "path": "train/review.pdf",
+      "role": "slides",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:22.552046+00:00",
+      "sha256": "d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65",
+      "bytes": 248218,
+      "pages": 27,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "train-exam",
+      "title": "MIT 6.041SC train-exam",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/dd524390df7bb78133d1bff2fc5d13ae_MIT6_041SCF13_quiz01_s09.pdf",
+      "path": "train/train-exam.pdf",
+      "role": "past_exam",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:22.815454+00:00",
+      "sha256": "45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68",
+      "bytes": 205865,
+      "pages": 10,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "train-solution",
+      "title": "MIT 6.041SC train-solution",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/ce9cf1921235ff105c2f08ba70ccd487_MIT6_041SCF13_qu01_s09_sol.pdf",
+      "path": "train/train-solution.pdf",
+      "role": "solution",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:24.163053+00:00",
+      "sha256": "28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce",
+      "bytes": 707027,
+      "pages": 11,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "lecture-1",
+      "title": "MIT 6.041SC lecture-1",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/ff296575da32c406c2e56131e1e38997_MIT6_041SCF13_L01.pdf",
+      "path": "train/lecture-1.pdf",
+      "role": "slides",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:24.512117+00:00",
+      "sha256": "d9538a403bd0390f54f3f1c6edec12a49777821facb459f1e6004744fe5498b0",
+      "bytes": 613739,
+      "pages": 4,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "lecture-2",
+      "title": "MIT 6.041SC lecture-2",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/a1462fa23de9d08c0dfd233a57278fed_MIT6_041SCF13_L02.pdf",
+      "path": "train/lecture-2.pdf",
+      "role": "slides",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:25.030253+00:00",
+      "sha256": "261a03813dbf289eb81dd78ce487fba332958ec5502526a7843df2a2de16ef52",
+      "bytes": 235674,
+      "pages": 3,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "lecture-3",
+      "title": "MIT 6.041SC lecture-3",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/a2015627268f4846eb3b1368623ce46f_MIT6_041SCF13_L03.pdf",
+      "path": "train/lecture-3.pdf",
+      "role": "slides",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:25.507289+00:00",
+      "sha256": "2ac46c0ef60bc554acfce65eaf5a43e0b784f0288774aff62112125ef5ff7c0a",
+      "bytes": 175559,
+      "pages": 3,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "lecture-4",
+      "title": "MIT 6.041SC lecture-4",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/17ea1d60167279b01569bc6dcd030966_MIT6_041SCF13_L04.pdf",
+      "path": "train/lecture-4.pdf",
+      "role": "slides",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:25.971577+00:00",
+      "sha256": "512a15facda793bb10ac54b55f7ad0c15b1a3dbf6ac2f0e89d8b458f1ab5737f",
+      "bytes": 158682,
+      "pages": 3,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "lecture-5",
+      "title": "MIT 6.041SC lecture-5",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/e49cdbaf3129125869700c46aa661fa1_MIT6_041SCF13_L05.pdf",
+      "path": "train/lecture-5.pdf",
+      "role": "slides",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:26.481834+00:00",
+      "sha256": "c7a75287b315b88c7047b447d71bf5fe8e2ddfe721fe89dd2f56e04aefcac54d",
+      "bytes": 183824,
+      "pages": 3,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "lecture-6",
+      "title": "MIT 6.041SC lecture-6",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/9866bcafa1403ea4163ec3c6b31a53c0_MIT6_041SCF13_L06.pdf",
+      "path": "train/lecture-6.pdf",
+      "role": "slides",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:26.726705+00:00",
+      "sha256": "a2adfd90bc3f9e5ceccef851fd5d8b922b7099b37fa1786fbeb6ba039e0a4dfb",
+      "bytes": 169127,
+      "pages": 3,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "lecture-7",
+      "title": "MIT 6.041SC lecture-7",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/c0a406b218730ddb16326d695a895c57_MIT6_041SCF13_L07.pdf",
+      "path": "train/lecture-7.pdf",
+      "role": "slides",
+      "split": "train",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:26.985037+00:00",
+      "sha256": "03f0d791603a0a95d26de4f99840863cbd0b8dab2d351d7f65c36419accedaad",
+      "bytes": 141674,
+      "pages": 3,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    }
+  ]
+}

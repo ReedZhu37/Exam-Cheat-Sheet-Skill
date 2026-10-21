@@ -1,0 +1,48 @@
+{
+  "template_version": "1.0",
+  "purpose": "Portable planning template; adapt to the implementation's input schema",
+  "project_id": "replace-me",
+  "course": null,
+  "assessment": null,
+  "scope": {
+    "included": [],
+    "excluded": [],
+    "citations": []
+  },
+  "sources": [],
+  "permissions": {
+    "local_processing": null,
+    "model_upload": null,
+    "redistribution": null,
+    "exam_use": null,
+    "evidence": []
+  },
+  "layout": {
+    "paper_size": null,
+    "maximum_printed_sides": null,
+    "minimum_font_pt": null,
+    "margins_mm": null,
+    "columns": null,
+    "color": null,
+    "formula_page_counts_toward_limit": null
+  },
+  "ranking": {
+    "protect_explicit_scope": true,
+    "protect_prerequisite_closure": true,
+    "frequency_unit": "unique_exam_id",
+    "evidence_splits": ["train"],
+    "require_emphasis_citation": true
+  },
+  "outputs": [
+    "review_guide",
+    "evidence_expanded",
+    "compact_sheet",
+    "coverage_gaps",
+    "deletion_log"
+  ],
+  "evaluation": {
+    "status": "not_run",
+    "protocol": null,
+    "freeze_manifest": null
+  }
+}
