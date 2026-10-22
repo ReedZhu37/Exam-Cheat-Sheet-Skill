@@ -1,0 +1,108 @@
+{
+  "items": [
+    {
+      "item_id": "P1(a)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Correct shifted-binomial PMF, including support and zero elsewhere. All tabulated probabilities are correct. Expectation 59/3 and variance 10/9 are correctly derived.",
+      "official_anchor": "Official solutions PDF page 1, Problem 1.1",
+      "sheet_references": ["Exam PDF page 1, binomial distribution summary"],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P1(b)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Correctly identifies the conditioning event as R ≤ 1 and computes the conditional expectation as 80/(32+80) = 5/7.",
+      "official_anchor": "Official solutions PDF pages 1–2, Problem 1.2",
+      "sheet_references": [],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P1(c)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Correctly fixes the fourth light as red and fifth as green while preserving independence and red probability for the first three. The resulting conditional variance is 2/3.",
+      "official_anchor": "Official solutions PDF page 2, Problem 1.3",
+      "sheet_references": ["Exam PDF page 1, binomial distribution summary"],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P1(d)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Correctly uses equally likely red-position subsets conditional on three reds. The favorable-to-total count is C(3,2)C(2,1)/C(5,3) = 3/5.",
+      "official_anchor": "Official solutions PDF page 2, Problem 1.4",
+      "sheet_references": [],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P1(e)",
+      "max_points": 5,
+      "correct": true,
+      "rationale": "Correct complete PMF: probability 1/4 at each of 20, 21, 22, and 23 minutes, and zero elsewhere.",
+      "official_anchor": "Official solutions PDF page 2, Problem 1.5",
+      "sheet_references": ["Exam PDF page 1, discrete uniform distribution summary"],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P1(f)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Correctly partitions the conditioning event into the two mutually exclusive sole-arrival cases. Independence and P(S=20)=80/243 yield the correct probability 163/403.",
+      "official_anchor": "Official solutions PDF pages 2–3, Problem 1.6",
+      "sheet_references": [],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P1(g)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Correctly conditions on all four equally likely waiting times and includes ties. The cumulative probabilities and their average are correct, giving 101/108.",
+      "official_anchor": "Official solutions PDF page 3, Problem 1.7",
+      "sheet_references": [],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P1(h)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Correctly observes that X=3 guarantees S ≤ J, giving joint probability 1/4. Dividing by 101/108 gives the correct conditional probability 27/101.",
+      "official_anchor": "Official solutions PDF pages 3–4, Problem 1.8",
+      "sheet_references": [],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P2(a)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Correct true verdict and complete proof: subtracting P(A intersect B) from P(A) establishes P(A intersect B-complement)=P(A)P(B-complement), including boundary-probability cases.",
+      "official_anchor": "Official solutions PDF page 4, Problem 2.1",
+      "sheet_references": [],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P2(b)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Valid counterexample on six equiprobable outcomes with P(C)=2/3. Given C, the joint probability 1/4 equals the product of the marginals. Given its complement, the joint probability 1/2 differs from the product 1/4. All assumptions and the failure of the conclusion are verified.",
+      "official_anchor": "Official solutions PDF pages 4–5, Problem 2.2",
+      "sheet_references": [],
+      "error_type": "none"
+    },
+    {
+      "item_id": "P2(c)",
+      "max_points": 10,
+      "correct": true,
+      "rationale": "Correct true verdict and proof using independence to obtain zero covariance, variance additivity, and nonnegative variance. The explicit finite-variance qualification is consistent with the usual interpretation underlying the official solution.",
+      "official_anchor": "Official solutions PDF page 5, Problem 2.3",
+      "sheet_references": [],
+      "error_type": "none"
+    }
+  ],
+  "total_points": 105,
+  "max_points": 105,
+  "correct_subparts": 11,
+  "total_subparts": 11,
+  "notes": "All distinct subparts receive full credit. Rubric labels P1(a–h) correspond to printed parts 1.1–1.8; P2(a–c) correspond to 2.1–2.3. Repeated question pages are counted once. Sheet references identify the supplied exam-page-1 formula summary."
+}

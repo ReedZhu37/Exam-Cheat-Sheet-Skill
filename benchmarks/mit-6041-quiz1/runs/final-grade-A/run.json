@@ -1,0 +1,172 @@
+{
+  "started_at": "2026-10-22T01:20:06.678243+00:00",
+  "fresh_session": true,
+  "requested_model": "openai/gpt-6-astra#high",
+  "permissions": [
+    {
+      "action": "*",
+      "resource": "*",
+      "effect": "deny"
+    }
+  ],
+  "agent_config_sha256": "768f649ebd52480daeb7c91d8f34d59233f640b6233e0807d5c751e99ca334c7",
+  "inputs": [
+    {
+      "name": "prompt.md",
+      "sha256": "8aec3fc4a24afecea45c1b1180eea46575e8ba0e93c3a8dff7f6e07ad4fa897d",
+      "bytes": 46176
+    },
+    {
+      "name": "page-01.png",
+      "sha256": "973646b585d9545a9aedc917e87ff14f7bdfcf6b4df47129a69aa5c76f118f63",
+      "bytes": 131571
+    },
+    {
+      "name": "page-02.png",
+      "sha256": "2fb7b32a9d36c0e56ffc5b280313683eba21af93f8fc517262e93d1c5fe1ad5e",
+      "bytes": 298309
+    },
+    {
+      "name": "page-03.png",
+      "sha256": "1d19228e1e8b90e108fda8b711c14dfd55ae37a414c9d90ec676647b22285a69",
+      "bytes": 58568
+    },
+    {
+      "name": "page-04.png",
+      "sha256": "c65c94e418a263681daace9a813e5882efb0a4a36e8f0ab2daf585f3a8462274",
+      "bytes": 122793
+    },
+    {
+      "name": "page-05.png",
+      "sha256": "5587cb0edf404bacfb3ba7b71d5461cc5e5166f8799deb324acc4e5fbce80573",
+      "bytes": 64404
+    },
+    {
+      "name": "page-06.png",
+      "sha256": "bf8243cea7bc7b2399e627bc38a624f3f92f6c0fa6f3025272eb2f6e5a47d4f9",
+      "bytes": 89918
+    },
+    {
+      "name": "page-07.png",
+      "sha256": "7ec139a77ad426fc56ec3b3a6ebccebe1052f40e4f780045120877e5e3fe3877",
+      "bytes": 48644
+    },
+    {
+      "name": "page-08.png",
+      "sha256": "7842c06bdbba42842bad01a582fd0753053ec8fab4a85341ad49d085c94a23ab",
+      "bytes": 43828
+    },
+    {
+      "name": "page-09.png",
+      "sha256": "6cf363368b9ae9e1ecc66a3f02e5e6dced5d2e03936687d5ad32bbf3e4186af8",
+      "bytes": 48410
+    },
+    {
+      "name": "page-10.png",
+      "sha256": "436f155c57b7cc20b5fcc6f018c6d8c35402ebd1a944d02a0d29255d5c54ecfc",
+      "bytes": 82931
+    },
+    {
+      "name": "page-11.png",
+      "sha256": "762e3303edcd7a70ddc46399e891eee17349a6cccbe33baa5df2e36bcdfd8019",
+      "bytes": 49724
+    },
+    {
+      "name": "page-12.png",
+      "sha256": "4061900e7843107f45a230010ec3d2528653a16480fa274fbdca0620a5c2971a",
+      "bytes": 36282
+    },
+    {
+      "name": "page-01.png",
+      "sha256": "e1f406b474f94d0cf9db2a20b1f69c67b8bddd99985d6b2bd450ebe8df52d62a",
+      "bytes": 150939
+    },
+    {
+      "name": "page-02.png",
+      "sha256": "a44dc8f8976d6cd63eabf373704a8ba44552c86ba3776f101a30e7865cb345e0",
+      "bytes": 209782
+    },
+    {
+      "name": "page-03.png",
+      "sha256": "c283eee4dbd4657e03418d12dbff5892a343bcde76c659aee24a4db188dae8d6",
+      "bytes": 204382
+    },
+    {
+      "name": "page-04.png",
+      "sha256": "303ab5bc94ad313ba654c3c991ac1a5afcf10c5ff44934c20b44a8d5645eeaaf",
+      "bytes": 214007
+    },
+    {
+      "name": "page-05.png",
+      "sha256": "3df685d8722e73453a893981004d28f720ef967e77a10118f4e496850aff34e2",
+      "bytes": 93089
+    },
+    {
+      "name": "page-06.png",
+      "sha256": "4061900e7843107f45a230010ec3d2528653a16480fa274fbdca0620a5c2971a",
+      "bytes": 36282
+    }
+  ],
+  "output_budget": "prompt maximum 8000 words; provider default hard token limit",
+  "timeout_seconds": 1800,
+  "returncode": 0,
+  "completed_at": "2026-10-22T01:21:22.344965+00:00",
+  "output_sha256": "8d5433fac221217d34620c7202b791c09b292874edbe5c61ad7e129e8bd1268b",
+  "event_types": [
+    "step_start",
+    "text"
+  ],
+  "session_ids": [
+    "ses_e9ece575dffeIDali8p3tt7qWj"
+  ],
+  "tool_events": [],
+  "actual_models": [
+    {
+      "id": "gpt-6-astra",
+      "providerID": "openai",
+      "variant": "high"
+    }
+  ],
+  "usage": [
+    {
+      "input": 38107,
+      "output": 1329,
+      "reasoning": 55,
+      "cache": {
+        "read": 0,
+        "write": 0
+      }
+    }
+  ],
+  "delivered_images": [
+    "page-01.png",
+    "page-02.png",
+    "page-03.png",
+    "page-04.png",
+    "page-05.png",
+    "page-06.png",
+    "page-07.png",
+    "page-08.png",
+    "page-09.png",
+    "page-10.png",
+    "page-11.png",
+    "page-12.png",
+    "page-01.png",
+    "page-02.png",
+    "page-03.png",
+    "page-04.png",
+    "page-05.png",
+    "page-06.png"
+  ],
+  "finish_reasons": [
+    "stop"
+  ],
+  "message_types": [
+    "idle",
+    "assistant",
+    "user",
+    "agent-switched"
+  ],
+  "valid": true,
+  "validation_errors": []
+}

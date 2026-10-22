@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "source_id": "final-exam",
+      "title": "MIT 6.041SC final-exam",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/f168b1a65cbabf8a6c66bd00058745df_MIT6_041SCF13_quiz01.pdf",
+      "path": "sealed_test/final-exam.pdf",
+      "role": "past_exam",
+      "split": "sealed_test",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-22T01:17:01.174785+00:00",
+      "sha256": "b91fb74fb927b08e8a48f70aad7c7fe82350f7ac02e7bf9c9a5946d48707d19f",
+      "bytes": 326870,
+      "pages": 12,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    },
+    {
+      "source_id": "final-solution",
+      "title": "MIT 6.041SC final-solution",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/71ce04e1629139e5f120a73f43f683da_MIT6_041SCF13_quiz01_sol.pdf",
+      "path": "sealed_test/final-solution.pdf",
+      "role": "solution",
+      "split": "sealed_test",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-22T01:19:43.313930+00:00",
+      "sha256": "92f4e31fd9a73b19e904d8d1945a9e8e484d2f35cf468899ff809b9cbf218f7f",
+      "bytes": 212042,
+      "pages": 6,
+      "parser_version": null,
+      "page_range": null,
+      "extraction_status": "needs_review",
+      "assets": [],
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ]
+    }
+  ]
+}

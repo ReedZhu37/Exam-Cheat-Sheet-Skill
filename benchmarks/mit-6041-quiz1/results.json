@@ -1,0 +1,165 @@
+{
+  "status": "completed",
+  "repository_created": true,
+  "sheet_generated": true,
+  "baseline_score": 105,
+  "assisted_score": 105,
+  "max_points": 105,
+  "baseline_correct_subparts": 11,
+  "assisted_correct_subparts": 11,
+  "total_subparts": 11,
+  "score_improvement": 0,
+  "replicates_per_group": 1,
+  "final_test_validated": true,
+  "generalization_proven": false,
+  "model": [
+    {
+      "id": "gpt-6-astra",
+      "providerID": "openai",
+      "variant": "high"
+    }
+  ],
+  "sheet_code_version": "4425c76396ca378ff7c32647a2853dfa34ffb3f45eb26ae98e8826d3877810cb",
+  "coverage": {
+    "audit_run": "runs/final-C/response.md",
+    "method": "Independent tool-denied sheet-only derivation audit; arithmetic/algebra and original formula page allowed",
+    "full": 11,
+    "partial": 0,
+    "absent": 0,
+    "total": 11,
+    "is_exam_score": false,
+    "qualification": "P2c uses the usual finite-variance interpretation. Coverage is a model judgment of derivability, not proof of learning or score gain.",
+    "items": [
+      {
+        "item_id": "P1a",
+        "original_label": "1.1",
+        "status": "FULL",
+        "concepts": [
+          "binomial",
+          "transformed-variables",
+          "pmf-cdf",
+          "expectation",
+          "variance"
+        ]
+      },
+      {
+        "item_id": "P1b",
+        "original_label": "1.2",
+        "status": "FULL",
+        "concepts": [
+          "binomial",
+          "conditional-laws",
+          "conditional-expectation"
+        ]
+      },
+      {
+        "item_id": "P1c",
+        "original_label": "1.3",
+        "status": "FULL",
+        "concepts": [
+          "event-algebra",
+          "event-independence",
+          "conditioning",
+          "counting",
+          "binomial",
+          "variance"
+        ]
+      },
+      {
+        "item_id": "P1d",
+        "original_label": "1.4",
+        "status": "FULL",
+        "concepts": [
+          "conditioning",
+          "counting",
+          "event-independence",
+          "event-algebra",
+          "probability-model",
+          "binomial"
+        ]
+      },
+      {
+        "item_id": "P1e",
+        "original_label": "1.5",
+        "status": "FULL",
+        "concepts": [
+          "discrete-uniform",
+          "transformed-variables",
+          "pmf-cdf"
+        ]
+      },
+      {
+        "item_id": "P1f",
+        "original_label": "1.6",
+        "status": "FULL",
+        "concepts": [
+          "event-algebra",
+          "discrete-uniform",
+          "binomial",
+          "rv-independence",
+          "conditioning"
+        ]
+      },
+      {
+        "item_id": "P1g",
+        "original_label": "1.7",
+        "status": "FULL",
+        "concepts": [
+          "total-probability",
+          "rv-independence",
+          "conditional-laws",
+          "binomial",
+          "pmf-cdf",
+          "discrete-uniform"
+        ]
+      },
+      {
+        "item_id": "P1h",
+        "original_label": "1.8",
+        "status": "FULL",
+        "concepts": [
+          "conditioning",
+          "binomial",
+          "transformed-variables",
+          "discrete-uniform"
+        ]
+      },
+      {
+        "item_id": "P2a",
+        "original_label": "2.1",
+        "status": "FULL",
+        "concepts": [
+          "event-algebra",
+          "probability-model",
+          "event-independence"
+        ]
+      },
+      {
+        "item_id": "P2b",
+        "original_label": "2.2",
+        "status": "FULL",
+        "concepts": [
+          "probability-model",
+          "conditioning",
+          "conditional-independence"
+        ]
+      },
+      {
+        "item_id": "P2c",
+        "original_label": "2.3",
+        "status": "FULL",
+        "concepts": [
+          "variance",
+          "expectation",
+          "pmf-cdf"
+        ]
+      }
+    ]
+  },
+  "development": {
+    "points": 98,
+    "max_points": 98,
+    "correct_subparts": 10,
+    "total_subparts": 10
+  }
+}
