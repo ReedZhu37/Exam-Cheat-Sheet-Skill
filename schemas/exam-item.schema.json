@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://exam-cheat-sheet.local/schemas/exam-item.schema.json",
+  "title": "Anchored exam question or solution",
+  "type": "object",
+  "required": ["id", "kind", "split", "text", "provenance", "quality"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "kind": {"enum": ["question", "solution"]},
+    "split": {"enum": ["train", "dev", "sealed_test"]},
+    "text": {"type": "string"},
+    "question_id": {"type": ["string", "null"]},
+    "points": {"type": ["number", "null"], "minimum": 0},
+    "quality": {"enum": ["needs_review", "reviewed"]},
+    "provenance": {
+      "type": "object", "required": ["source_id", "anchor", "source_sha256"],
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1},
+        "anchor": {"type": "string", "minLength": 1},
+        "source_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,148 @@
+{
+  "started_at": "2026-10-21T18:37:00.995628+00:00",
+  "fresh_session": true,
+  "requested_model": "openai/gpt-6-astra#high",
+  "permissions": [
+    {
+      "action": "*",
+      "resource": "*",
+      "effect": "deny"
+    }
+  ],
+  "agent_config_sha256": "768f649ebd52480daeb7c91d8f34d59233f640b6233e0807d5c751e99ca334c7",
+  "inputs": [
+    {
+      "name": "prompt.md",
+      "sha256": "9110d4c61251e84df19ca5df522199144a94f0d94a1fb4efed12a0cc5be0ed41",
+      "bytes": 32636
+    },
+    {
+      "name": "page-01.png",
+      "sha256": "8b4726570b5862ca7527be7b8c2edce6d90cc7ce2ed679b4790cc0fe0efc2b98",
+      "bytes": 131837
+    },
+    {
+      "name": "page-02.png",
+      "sha256": "83c9f72f3b1a21f8fcddd47f1d0dd60c3c0035a97ddcae410d92a44049827b11",
+      "bytes": 309679
+    },
+    {
+      "name": "page-03.png",
+      "sha256": "30b0447d9f098da66cd049c8af4f60b58b61baf07f445493bf61e5c2c8c385de",
+      "bytes": 73342
+    },
+    {
+      "name": "page-04.png",
+      "sha256": "681b214b9c39eb2372d2167e4020d52f705be9f90dbb9816e8a37b6c093dfb51",
+      "bytes": 67143
+    },
+    {
+      "name": "page-05.png",
+      "sha256": "62ad867733d38c022b9219ed4bae1d5b77dc98703b568c88e40d2e53bfc0c3b7",
+      "bytes": 43163
+    },
+    {
+      "name": "page-06.png",
+      "sha256": "531e2fd65998fe6a7208481edd3872fdcfe41db702d489e4c04cec6c2b0a1bf6",
+      "bytes": 51662
+    },
+    {
+      "name": "page-07.png",
+      "sha256": "f826dfa75a8a450d4e5def0a1ba8119d62154299d5a7b140a67b308ba086547d",
+      "bytes": 108647
+    },
+    {
+      "name": "page-08.png",
+      "sha256": "f537e7b4e0419dced95ba863875e292e2957d175d0aaf22159f5b9eb82d82808",
+      "bytes": 40657
+    },
+    {
+      "name": "page-09.png",
+      "sha256": "ce88795e67a0e9dfbc0da864a9ca22576fcb6cf38a0bfbe9efb556c56d9bbc66",
+      "bytes": 56130
+    },
+    {
+      "name": "page-10.png",
+      "sha256": "4061900e7843107f45a230010ec3d2528653a16480fa274fbdca0620a5c2971a",
+      "bytes": 36282
+    },
+    {
+      "name": "page-01.png",
+      "sha256": "bea65347cb85a5386f1ede429cd470b5f4551ce3bca51ce75c22f3888b0b72a6",
+      "bytes": 167819
+    },
+    {
+      "name": "page-02.png",
+      "sha256": "453e168daf23f23054e1d73ca4fe5271a35c0edc6600fb94564bb30dab70ff3b",
+      "bytes": 212864
+    },
+    {
+      "name": "page-03.png",
+      "sha256": "ebf5c712fb5e4675bc072c01cf95faadb9a7aee884aabc55c7edab921d53670a",
+      "bytes": 203310
+    },
+    {
+      "name": "page-04.png",
+      "sha256": "ee78e1ed581fdbfb99c8757f721fefca0dd9a1f7353493d8f23b443caad9efa4",
+      "bytes": 36763
+    }
+  ],
+  "output_budget": "prompt maximum 8000 words; provider default hard token limit",
+  "timeout_seconds": 1800,
+  "returncode": 0,
+  "completed_at": "2026-10-21T18:38:08.087863+00:00",
+  "output_sha256": "4fa765f7cf8a471c9e2a434c4e48d93dea6d5442759d56cac8a28b84028bf87f",
+  "event_types": [
+    "step_start",
+    "text"
+  ],
+  "session_ids": [
+    "ses_ea03f62b6ffelGQWKXx0L2t6mz"
+  ],
+  "tool_events": [],
+  "actual_models": [
+    {
+      "id": "gpt-6-astra",
+      "providerID": "openai",
+      "variant": "high"
+    }
+  ],
+  "usage": [
+    {
+      "input": 29313,
+      "output": 1253,
+      "reasoning": 64,
+      "cache": {
+        "read": 0,
+        "write": 0
+      }
+    }
+  ],
+  "delivered_images": [
+    "page-01.png",
+    "page-02.png",
+    "page-03.png",
+    "page-04.png",
+    "page-05.png",
+    "page-06.png",
+    "page-07.png",
+    "page-08.png",
+    "page-09.png",
+    "page-10.png",
+    "page-01.png",
+    "page-02.png",
+    "page-03.png",
+    "page-04.png"
+  ],
+  "finish_reasons": [
+    "stop"
+  ],
+  "message_types": [
+    "idle",
+    "assistant",
+    "user",
+    "agent-switched"
+  ],
+  "valid": true,
+  "validation_errors": []
+}

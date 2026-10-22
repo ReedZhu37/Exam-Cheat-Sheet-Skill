@@ -31,6 +31,16 @@ def main():
         if hashlib.sha256(path.read_bytes()).hexdigest() != pin['sha256'] or path.stat().st_size != pin['bytes']:
             raise ValueError(f'Download pin mismatch: {source["id"]}')
     manifest['sources'] = [ingest_source(source, args.root, args.out) for source in sources]
+    # Keep published asset locators relocatable; the generic API returns absolute
+    # paths, but this repository example uses repository-relative paths.
+    repo = Path(__file__).resolve().parents[1]
+    for source in manifest['sources']:
+        for page in source['metadata']['pages']:
+            if page.get('raster_path'):
+                page['raster_path'] = Path(page['raster_path']).relative_to(repo).as_posix()
+            for block in page.get('blocks', []):
+                if block.get('asset_path'):
+                    block['asset_path'] = Path(block['asset_path']).relative_to(repo).as_posix()
     validate_manifest(manifest, root=args.root)
     args.manifest.parent.mkdir(parents=True, exist_ok=True)
     args.manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

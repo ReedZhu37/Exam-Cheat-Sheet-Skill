@@ -1,0 +1,1699 @@
+{
+  "title": "MIT 6.041 Quiz 1: probability and discrete random variables (v2; study reference)",
+  "scope": [
+    "probability-model",
+    "event-algebra",
+    "conditioning",
+    "probability-trees",
+    "total-probability",
+    "bayes",
+    "event-independence",
+    "conditional-independence",
+    "counting",
+    "pmf-cdf",
+    "transformed-variables",
+    "expectation",
+    "variance",
+    "joint-marginal",
+    "conditional-laws",
+    "rv-independence",
+    "conditional-expectation",
+    "total-expectation",
+    "bernoulli-indicators",
+    "binomial",
+    "geometric",
+    "discrete-uniform",
+    "stopping-counts"
+  ],
+  "sources": [
+    {
+      "source_id": "review",
+      "split": "train",
+      "role": "slides",
+      "title": "MIT 6.041SC review",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/337c2b848282f31191196653a3fd7a45_MIT6_041SCF13_quiz01_revi.pdf",
+      "path": "train/review.pdf",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:22.552046+00:00",
+      "sha256": "d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65",
+      "bytes": 248218,
+      "pages": 27,
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ],
+      "extraction_status": "needs_review"
+    },
+    {
+      "source_id": "train-exam",
+      "split": "train",
+      "role": "past_exam",
+      "title": "MIT 6.041SC train-exam",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/dd524390df7bb78133d1bff2fc5d13ae_MIT6_041SCF13_quiz01_s09.pdf",
+      "path": "train/train-exam.pdf",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:22.815454+00:00",
+      "sha256": "45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68",
+      "bytes": 205865,
+      "pages": 10,
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ],
+      "extraction_status": "needs_review"
+    },
+    {
+      "source_id": "train-solution",
+      "split": "train",
+      "role": "solution",
+      "title": "MIT 6.041SC train-solution",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/ce9cf1921235ff105c2f08ba70ccd487_MIT6_041SCF13_qu01_s09_sol.pdf",
+      "path": "train/train-solution.pdf",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:24.163053+00:00",
+      "sha256": "28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce",
+      "bytes": 707027,
+      "pages": 11,
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ],
+      "extraction_status": "needs_review"
+    },
+    {
+      "source_id": "lecture-6",
+      "split": "train",
+      "role": "slides",
+      "title": "MIT 6.041SC lecture-6",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/9866bcafa1403ea4163ec3c6b31a53c0_MIT6_041SCF13_L06.pdf",
+      "path": "train/lecture-6.pdf",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:26.726705+00:00",
+      "sha256": "a2adfd90bc3f9e5ceccef851fd5d8b922b7099b37fa1786fbeb6ba039e0a4dfb",
+      "bytes": 169127,
+      "pages": 3,
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ],
+      "extraction_status": "needs_review"
+    },
+    {
+      "source_id": "lecture-7",
+      "split": "train",
+      "role": "slides",
+      "title": "MIT 6.041SC lecture-7",
+      "author": "MIT OpenCourseWare / John Tsitsiklis",
+      "url": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/c0a406b218730ddb16326d695a895c57_MIT6_041SCF13_L07.pdf",
+      "path": "train/lecture-7.pdf",
+      "license": "CC-BY-NC-SA-4.0",
+      "retrieved_at": "2026-10-21T18:26:26.985037+00:00",
+      "sha256": "03f0d791603a0a95d26de4f99840863cbd0b8dab2d351d7f65c36419accedaad",
+      "bytes": 141674,
+      "pages": 3,
+      "restrictions": [
+        "Noncommercial; share adaptations alike; see source for third-party exceptions."
+      ],
+      "extraction_status": "needs_review"
+    }
+  ],
+  "concepts": [
+    {
+      "concept_id": "probability-model",
+      "name": "Sample space and probability law",
+      "aliases": [
+        "axioms",
+        "uniform sample space"
+      ],
+      "definition": "Omega lists possible outcomes; an event is a subset. A probability law assigns nonnegative mass totaling one.",
+      "formulas": [
+        {
+          "expression": "P(A) >= 0; P(Omega) = 1; P(union_i A_i) = sum_i P(A_i)",
+          "variables": {
+            "Omega": "sample space",
+            "A": "any event",
+            "A_i": "events",
+            "i": "index"
+          },
+          "conditions": "Finite or countable disjoint events for additivity.",
+          "source": {
+            "source_id": "review",
+            "page": 4
+          }
+        },
+        {
+          "expression": "P(A) = |A|/|Omega|",
+          "variables": {
+            "A": "event",
+            "|.|": "number of outcomes",
+            "Omega": "sample space"
+          },
+          "conditions": "Finite, equally likely elementary outcomes.",
+          "source": {
+            "source_id": "review",
+            "page": 6
+          }
+        }
+      ],
+      "prerequisites": [],
+      "recognition": "Start here when translating a story into outcomes.",
+      "procedure": [
+        "Specify one elementary outcome and its probability; then identify favorable outcomes."
+      ],
+      "pitfalls": [
+        "Unordered occupancy patterns need not be equally likely even when individual throws are uniform."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 3
+        },
+        {
+          "source_id": "review",
+          "page": 4
+        },
+        {
+          "source_id": "review",
+          "page": 6
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 3
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "event-algebra",
+      "name": "Unions, complements, and bounds",
+      "aliases": [
+        "inclusion-exclusion",
+        "union bound"
+      ],
+      "definition": "Translate 'or' into union, 'and' into intersection, and 'none' into a complement.",
+      "formulas": [
+        {
+          "expression": "P(A union B) = P(A) + P(B) - P(A intersect B) <= P(A) + P(B)",
+          "variables": {
+            "A,B": "events"
+          },
+          "conditions": "Any two events.",
+          "source": {
+            "source_id": "review",
+            "page": 5
+          }
+        },
+        {
+          "expression": "P(A^c) = 1 - P(A)",
+          "variables": {
+            "A^c": "complement of event A"
+          },
+          "conditions": "Derived from disjoint additivity and normalization.",
+          "source": {
+            "source_id": "review",
+            "page": 4,
+            "locator": "Axioms; complement corollary"
+          }
+        }
+      ],
+      "prerequisites": [
+        "probability-model"
+      ],
+      "recognition": "At least one, neither, or overlapping alternatives.",
+      "procedure": [
+        "Prefer the simpler event or its complement.",
+        "Train Q2(c): no green bike has probability (5/9)(4/8), so at least one green has probability 13/18."
+      ],
+      "pitfalls": [
+        "Adding overlapping events double-counts their intersection."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 5
+        },
+        {
+          "source_id": "train-solution",
+          "page": 5,
+          "locator": "Q2(c)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 5
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 4,
+          "exam_id": "S2009",
+          "item_id": "Q2(c)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "conditioning",
+      "name": "Conditional probability",
+      "aliases": [
+        "restricted universe"
+      ],
+      "definition": "Knowing B occurred restricts the universe to B and renormalizes probabilities.",
+      "formulas": [
+        {
+          "expression": "P(A|B) = P(A intersect B)/P(B)",
+          "variables": {
+            "A": "target event",
+            "B": "observed event"
+          },
+          "conditions": "P(B) > 0.",
+          "source": {
+            "source_id": "review",
+            "page": 7
+          }
+        }
+      ],
+      "prerequisites": [
+        "probability-model"
+      ],
+      "recognition": "Given, knowing, among, or conditional on.",
+      "procedure": [
+        "Write the conditioning event explicitly; compute its mass and the intersection.",
+        "Train Q2(a): with four green bikes among nine, P(Alice green)=4/9; given Bob green, it becomes 3/8."
+      ],
+      "pitfalls": [
+        "Conditioning can increase or decrease probability; it does not reverse the conditional automatically."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 7
+        },
+        {
+          "source_id": "train-solution",
+          "page": 5,
+          "locator": "Q2(a)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 7
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 4,
+          "exam_id": "S2009",
+          "item_id": "Q2(a)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "probability-trees",
+      "name": "Multiplication rule and trees",
+      "aliases": [
+        "chain rule"
+      ],
+      "definition": "A tree records successive conditional choices. Multiply along a path; add disjoint terminal paths.",
+      "formulas": [
+        {
+          "expression": "P(A intersect B intersect C) = P(A)P(B|A)P(C|A intersect B)",
+          "variables": {
+            "A,B,C": "successive events"
+          },
+          "conditions": "Conditioning prefixes have positive probability.",
+          "source": {
+            "source_id": "review",
+            "page": 8
+          }
+        }
+      ],
+      "prerequisites": [
+        "conditioning"
+      ],
+      "recognition": "Sequential draws or several stages of an experiment.",
+      "procedure": [
+        "Label branches with probabilities conditional on their entire history.",
+        "Train Q2(d): same-color probability is (4*3+3*2+2*1)/(9*8)=5/18; different colors gives 13/18."
+      ],
+      "pitfalls": [
+        "Without replacement, update both numerator and denominator after each draw."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 8
+        },
+        {
+          "source_id": "train-solution",
+          "page": 6,
+          "locator": "Q2(d)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 8
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 5,
+          "exam_id": "S2009",
+          "item_id": "Q2(d)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "total-probability",
+      "name": "Total probability",
+      "aliases": [
+        "partition rule",
+        "mixture"
+      ],
+      "definition": "Average conditional probabilities over mutually exclusive, exhaustive cases.",
+      "formulas": [
+        {
+          "expression": "P(B) = sum_i P(A_i)P(B|A_i)",
+          "variables": {
+            "B": "target event",
+            "A_i": "partition cases",
+            "i": "case index"
+          },
+          "conditions": "Cases partition Omega; use positive-probability cases.",
+          "source": {
+            "source_id": "review",
+            "page": 9
+          }
+        }
+      ],
+      "prerequisites": [
+        "probability-trees"
+      ],
+      "recognition": "Choose a device/type first, then observe an outcome.",
+      "procedure": [
+        "Choose a useful partition and weight each conditional result.",
+        "Train Q3(d): dice-pair weights 3/4, 1/4 and double probabilities 2/5, 1/4 give (3/4)(2/5)+(1/4)(1/4)=29/80."
+      ],
+      "pitfalls": [
+        "An unweighted average is valid only for equally probable cases."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 9
+        },
+        {
+          "source_id": "train-exam",
+          "page": 6
+        },
+        {
+          "source_id": "train-exam",
+          "page": 7,
+          "locator": "Q3(d) and second joint table"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 9
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 7,
+          "exam_id": "S2009",
+          "item_id": "Q3(d)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "bayes",
+      "name": "Bayes' rule",
+      "aliases": [
+        "posterior",
+        "inverse probability"
+      ],
+      "definition": "Update a prior case probability using the likelihood of observed evidence.",
+      "formulas": [
+        {
+          "expression": "P(A_i|B) = P(B|A_i)P(A_i) / sum_j P(B|A_j)P(A_j)",
+          "variables": {
+            "A_i,A_j": "partition cases",
+            "B": "evidence",
+            "i,j": "case indices"
+          },
+          "conditions": "P(B)>0; partition cases have positive prior mass.",
+          "source": {
+            "source_id": "review",
+            "page": 10
+          }
+        }
+      ],
+      "prerequisites": [
+        "total-probability"
+      ],
+      "recognition": "Infer which hidden cause produced an observed outcome.",
+      "procedure": [
+        "Draw cause-to-evidence branches; divide the desired path mass by all evidence paths.",
+        "Generated from train Q3's dice setup: after observing a double, the first pair's posterior is (3/10)/(29/80)=24/29."
+      ],
+      "pitfalls": [
+        "Likelihood P(B|A) is not posterior P(A|B)."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 10
+        },
+        {
+          "source_id": "train-exam",
+          "page": 7,
+          "locator": "Q3(d), setup for generated reverse question"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 10
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "event-independence",
+      "name": "Pairwise and mutual independence",
+      "aliases": [
+        "independent events"
+      ],
+      "definition": "Independence means learning one event does not change the other's probability. Mutual independence requires every subset, not just pairs.",
+      "formulas": [
+        {
+          "expression": "P(A intersect B) = P(A)P(B)",
+          "variables": {
+            "A,B": "events"
+          },
+          "conditions": "Necessary and sufficient for independence.",
+          "source": {
+            "source_id": "review",
+            "page": 11
+          }
+        },
+        {
+          "expression": "P(intersection_{i in S} A_i) = product_{i in S} P(A_i)",
+          "variables": {
+            "A_i": "events",
+            "S": "subset of indices"
+          },
+          "conditions": "Must hold for every subset S for mutual independence.",
+          "source": {
+            "source_id": "review",
+            "page": 12
+          }
+        }
+      ],
+      "prerequisites": [
+        "conditioning"
+      ],
+      "recognition": "Independent trials or a request to justify independence.",
+      "procedure": [
+        "Check factorization, or give one counterexample.",
+        "Train Q1(b): a fixed urn remains empty with probability (1-1/m)^n for n independent throws into m equally likely urns."
+      ],
+      "pitfalls": [
+        "Disjoint positive-probability events are dependent; pairwise independence is weaker than mutual independence."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 11
+        },
+        {
+          "source_id": "review",
+          "page": 12
+        },
+        {
+          "source_id": "train-exam",
+          "page": 1,
+          "locator": "Q1(b)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 12
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 1,
+          "exam_id": "S2009",
+          "item_id": "Q1(b)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "conditional-independence",
+      "name": "Conditional independence",
+      "aliases": [],
+      "definition": "Independence inside a restricted universe can differ from independence before conditioning.",
+      "formulas": [
+        {
+          "expression": "P(A intersect B|C) = P(A|C)P(B|C)",
+          "variables": {
+            "A,B": "events tested",
+            "C": "conditioning event"
+          },
+          "conditions": "P(C)>0; equality defines independence given C.",
+          "source": {
+            "source_id": "review",
+            "page": 11
+          }
+        }
+      ],
+      "prerequisites": [
+        "event-independence"
+      ],
+      "recognition": "Independence after receiving shared information.",
+      "procedure": [
+        "Recompute all probabilities under the condition.",
+        "Train Q1(c): given two fair coins match, only HH and TT remain. Both-heads probability is 1/2, versus product 1/4, so the heads events become dependent."
+      ],
+      "pitfalls": [
+        "Neither unconditional nor conditional independence implies the other."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 11
+        },
+        {
+          "source_id": "train-exam",
+          "page": 1,
+          "locator": "Q1(c)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 11
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 1,
+          "exam_id": "S2009",
+          "item_id": "Q1(c)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "counting",
+      "name": "Counting selections and partitions",
+      "aliases": [
+        "permutations",
+        "combinations",
+        "multinomial coefficient"
+      ],
+      "definition": "Count outcomes consistently with whether order matters, replacement is allowed, and groups are labeled.",
+      "formulas": [
+        {
+          "expression": "N = product_i n_i; P(n,k) = n!/(n-k)!; C(n,k) = n!/[k!(n-k)!]",
+          "variables": {
+            "n_i": "choices at stage i",
+            "N": "total choices",
+            "n": "distinct objects",
+            "k": "objects selected",
+            "P(n,k)": "ordered count",
+            "C(n,k)": "unordered count"
+          },
+          "conditions": "Stage counts fixed across histories; selections without replacement; integers 0<=k<=n.",
+          "source": {
+            "source_id": "review",
+            "page": 13
+          }
+        },
+        {
+          "expression": "N = n!/(n_1! ... n_r!)",
+          "variables": {
+            "N": "partitions",
+            "n": "objects",
+            "n_i": "size of labeled group i",
+            "r": "groups"
+          },
+          "conditions": "Nonnegative integer sizes summing to n.",
+          "source": {
+            "source_id": "review",
+            "page": 14
+          }
+        }
+      ],
+      "prerequisites": [
+        "probability-model"
+      ],
+      "recognition": "Hands, assignments, arrangements, or fixed numbers of successes.",
+      "procedure": [
+        "Choose ordered sequences or unordered sets for both numerator and denominator.",
+        "Train Q1(e): all four aces in a 26-card hand has probability C(48,22)/C(52,26)."
+      ],
+      "pitfalls": [
+        "Do not multiply by 4! when ace order is irrelevant."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 13
+        },
+        {
+          "source_id": "review",
+          "page": 14
+        },
+        {
+          "source_id": "train-solution",
+          "page": 3,
+          "locator": "Q1(e)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 14
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 2,
+          "exam_id": "S2009",
+          "item_id": "Q1(e)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "pmf-cdf",
+      "name": "Discrete random variables and cumulative probabilities",
+      "aliases": [
+        "PMF",
+        "CDF",
+        "support"
+      ],
+      "definition": "A random variable assigns a number to each outcome. Its PMF assigns mass to each attainable value; cumulative notation below is a derived convenience.",
+      "formulas": [
+        {
+          "expression": "p_X(x) = P(X=x)",
+          "variables": {
+            "X": "random variable",
+            "x": "value",
+            "p_X": "PMF"
+          },
+          "conditions": "Discrete X.",
+          "source": {
+            "source_id": "review",
+            "page": 15
+          }
+        },
+        {
+          "expression": "p_X(x)>=0; sum_x p_X(x)=1; F_X(t)=P(X<=t)=sum_{x<=t} p_X(x)",
+          "variables": {
+            "p_X": "PMF",
+            "F_X": "cumulative probability",
+            "x": "support value",
+            "t": "threshold"
+          },
+          "conditions": "Discrete support; cumulative identity derived by summing the threshold event.",
+          "source": {
+            "source_id": "review",
+            "page": 16,
+            "locator": "PMF properties; derived choice S={x:x<=t}, not an explicit CDF slide"
+          }
+        }
+      ],
+      "prerequisites": [
+        "probability-model"
+      ],
+      "recognition": "Find a distribution or a threshold probability.",
+      "procedure": [
+        "List support, collect outcome masses, normalize; sum through the requested threshold."
+      ],
+      "pitfalls": [
+        "A PMF value is a point mass, not a cumulative probability. Include zero outside support."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 15
+        },
+        {
+          "source_id": "review",
+          "page": 16
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 16
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "transformed-variables",
+      "name": "Functions of random variables",
+      "aliases": [
+        "derived PMF",
+        "many-to-one transformation"
+      ],
+      "definition": "Different input outcomes producing the same output contribute to the same output mass.",
+      "formulas": [
+        {
+          "expression": "p_Z(z)=sum_{(x,y):g(x,y)=z} p_XY(x,y)",
+          "variables": {
+            "Z": "g(X,Y)",
+            "g": "function",
+            "x,y": "input values",
+            "z": "output value",
+            "p_XY": "joint PMF"
+          },
+          "conditions": "Discrete inputs; include every preimage.",
+          "source": {
+            "source_id": "review",
+            "page": 20
+          }
+        },
+        {
+          "expression": "p_Y(y)=sum_{x:g(x)=y} p_X(x)",
+          "variables": {
+            "Y": "g(X)",
+            "g": "function",
+            "x,y": "values",
+            "p_X": "input PMF"
+          },
+          "conditions": "Discrete X.",
+          "source": {
+            "source_id": "review",
+            "page": 16
+          }
+        }
+      ],
+      "prerequisites": [
+        "pmf-cdf"
+      ],
+      "recognition": "Sum, minimum, square, or joint measurements defined from the same inputs.",
+      "procedure": [
+        "Write the requested output event; solve its inverse constraints. Translate the original integer support before evaluating probabilities. For joint outputs apply the same event-preimage rule to both equations; sum every compatible input pair, or evaluate the unique pair when the map is one-to-one.",
+        "Generated example: equally likely X=-1,0,1 gives P(X^2=1)=2/3 and P(X^2=0)=1/3."
+      ],
+      "pitfalls": [
+        "A many-to-one map cannot be handled using only one inverse value."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 16
+        },
+        {
+          "source_id": "review",
+          "page": 20
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 20
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "expectation",
+      "name": "Expectation and linearity",
+      "aliases": [
+        "mean",
+        "LOTUS"
+      ],
+      "definition": "Expectation is a probability-weighted average. Functions can be averaged directly using the original law.",
+      "formulas": [
+        {
+          "expression": "E[X]=sum_x x p_X(x); E[g(X)]=sum_x g(x)p_X(x)",
+          "variables": {
+            "X": "random variable",
+            "x": "value",
+            "p_X": "PMF",
+            "g": "function"
+          },
+          "conditions": "Absolute integrability for finite expectations.",
+          "source": {
+            "source_id": "review",
+            "page": 17
+          }
+        },
+        {
+          "expression": "E[aX+bY+c]=aE[X]+bE[Y]+c",
+          "variables": {
+            "X,Y": "random variables",
+            "a,b,c": "constants"
+          },
+          "conditions": "Finite means; independence unnecessary.",
+          "source": {
+            "source_id": "review",
+            "page": 20
+          }
+        },
+        {
+          "expression": "E[g(X,Y)]=sum_x sum_y g(x,y)p_XY(x,y)",
+          "variables": {
+            "X,Y": "random variables",
+            "x,y": "values",
+            "g": "payoff function",
+            "p_XY": "joint PMF"
+          },
+          "conditions": "Absolute integrability; independence unnecessary.",
+          "source": {
+            "source_id": "review",
+            "page": 20
+          }
+        }
+      ],
+      "prerequisites": [
+        "pmf-cdf"
+      ],
+      "recognition": "Average cost, gain, or total count.",
+      "procedure": [
+        "Write the payoff as a function or sum, then average.",
+        "Generated example: equiprobable X=0,2 gives E[X^2]=2, while (E[X])^2=1."
+      ],
+      "pitfalls": [
+        "Generally E[g(X)] differs from g(E[X])."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 17
+        },
+        {
+          "source_id": "review",
+          "page": 20
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 17
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 3,
+          "exam_id": "S2009",
+          "item_id": "Q1(i)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "variance",
+      "name": "Variance and scaling",
+      "aliases": [
+        "second moment"
+      ],
+      "definition": "Variance measures mean squared distance from the mean.",
+      "formulas": [
+        {
+          "expression": "Var(X)=E[(X-E[X])^2]=E[X^2]-(E[X])^2; Var(aX+b)=a^2 Var(X)",
+          "variables": {
+            "X": "random variable",
+            "a,b": "constants"
+          },
+          "conditions": "Finite second moment.",
+          "source": {
+            "source_id": "review",
+            "page": 18
+          }
+        },
+        {
+          "expression": "Var(sum_i X_i)=sum_i Var(X_i)",
+          "variables": {
+            "X_i": "random variables",
+            "i": "finite index"
+          },
+          "conditions": "Independent variables with finite variances.",
+          "source": {
+            "source_id": "review",
+            "page": 25
+          }
+        }
+      ],
+      "prerequisites": [
+        "expectation"
+      ],
+      "recognition": "Spread, uncertainty, or variance of a total.",
+      "procedure": [
+        "Compute first and second moments; subtract the squared mean.",
+        "Generated example: X=0 or 2 equally likely has variance 1; 3X+7 has variance 9."
+      ],
+      "pitfalls": [
+        "Constants shift means, not variance. Dependent summands need cross terms."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 18
+        },
+        {
+          "source_id": "review",
+          "page": 25
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 18
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "joint-marginal",
+      "name": "Joint and marginal PMFs",
+      "aliases": [
+        "joint table",
+        "marginalization"
+      ],
+      "definition": "A joint law assigns mass to value pairs; marginalization sums away the unwanted variable.",
+      "formulas": [
+        {
+          "expression": "p_XY(x,y)=P(X=x,Y=y); p_X(x)=sum_y p_XY(x,y); p_Y(y)=sum_x p_XY(x,y)",
+          "variables": {
+            "X,Y": "random variables",
+            "x,y": "values",
+            "p_XY": "joint PMF",
+            "p_X,p_Y": "marginals"
+          },
+          "conditions": "Discrete variables on the same experiment.",
+          "source": {
+            "source_id": "review",
+            "page": 19
+          }
+        }
+      ],
+      "prerequisites": [
+        "pmf-cdf"
+      ],
+      "recognition": "A two-dimensional probability table or paired measurements.",
+      "procedure": [
+        "Read axes; sum rows or columns and check total mass.",
+        "Train Q3(a,b): diagonal entries 1/10 and others 1/20 give each marginal value probability 1/4."
+      ],
+      "pitfalls": [
+        "Uniform marginals do not imply a uniform joint distribution."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 19
+        },
+        {
+          "source_id": "train-exam",
+          "page": 6,
+          "locator": "Q3 joint table"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 19
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 6,
+          "exam_id": "S2009",
+          "item_id": "Q3(a)"
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 6,
+          "exam_id": "S2009",
+          "item_id": "Q3(b)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "conditional-laws",
+      "name": "Conditional PMFs and mixture laws",
+      "aliases": [
+        "conditional distribution"
+      ],
+      "definition": "Restrict a joint law to the observed event and renormalize.",
+      "formulas": [
+        {
+          "expression": "p_X|Y(x|y)=p_XY(x,y)/p_Y(y); p_X|A(x)=P(X=x,A)/P(A)",
+          "variables": {
+            "X,Y": "random variables",
+            "x,y": "values",
+            "A": "event",
+            "p": "indicated PMF"
+          },
+          "conditions": "Denominator positive.",
+          "source": {
+            "source_id": "review",
+            "page": 21
+          }
+        },
+        {
+          "expression": "p_XY(x,y)=p_X|Y(x|y)p_Y(y); p_X(x)=sum_y p_X|Y(x|y)p_Y(y)",
+          "variables": {
+            "x,y": "values",
+            "p": "indicated joint, conditional, or marginal PMF"
+          },
+          "conditions": "Sum over positive-mass values of Y.",
+          "source": {
+            "source_id": "review",
+            "page": 22
+          }
+        }
+      ],
+      "prerequisites": [
+        "joint-marginal",
+        "conditioning"
+      ],
+      "recognition": "Distribution after observing another variable or an event.",
+      "procedure": [
+        "Keep compatible cells, divide by retained mass, verify sum one.",
+        "Train Q3(g): given the second head occurs on toss 7, the first head is uniform on positions 1 through 6."
+      ],
+      "pitfalls": [
+        "Conditioning can change support and destroy independence."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 21
+        },
+        {
+          "source_id": "review",
+          "page": 22
+        },
+        {
+          "source_id": "train-solution",
+          "page": 10,
+          "locator": "Q3(g)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 21
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 9,
+          "exam_id": "S2009",
+          "item_id": "Q3(g)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "rv-independence",
+      "name": "Independent random variables",
+      "aliases": [
+        "PMF factorization"
+      ],
+      "definition": "The joint law factors into marginals. Separate functions of independent variables remain independent.",
+      "formulas": [
+        {
+          "expression": "p_XY(x,y)=p_X(x)p_Y(y)",
+          "variables": {
+            "x,y": "all possible value pairs",
+            "p_XY": "joint law",
+            "p_X,p_Y": "marginals"
+          },
+          "conditions": "Equality for every pair defines independence.",
+          "source": {
+            "source_id": "review",
+            "page": 24
+          }
+        },
+        {
+          "expression": "E[XY]=E[X]E[Y]",
+          "variables": {
+            "X,Y": "random variables"
+          },
+          "conditions": "Independent, integrable X and Y; converse false.",
+          "source": {
+            "source_id": "review",
+            "page": 25
+          }
+        }
+      ],
+      "prerequisites": [
+        "joint-marginal"
+      ],
+      "recognition": "Test whether one measurement provides information about another.",
+      "procedure": [
+        "Find marginals, then test factorization. A quick disproof is an impossible joint pair whose two marginal probabilities are positive. Check degenerate parameter endpoints separately; a constant variable is independent of any variable.",
+        "Train Q3(c): p(1,1)=1/10 differs from (1/4)(1/4)=1/16, proving dependence."
+      ],
+      "pitfalls": [
+        "One failed pair disproves independence; one successful pair does not prove it."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 24
+        },
+        {
+          "source_id": "review",
+          "page": 25
+        },
+        {
+          "source_id": "train-exam",
+          "page": 6,
+          "locator": "Q3(c)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 24
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 6,
+          "exam_id": "S2009",
+          "item_id": "Q3(c)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "conditional-expectation",
+      "name": "Conditional expectation",
+      "aliases": [
+        "conditional mean"
+      ],
+      "definition": "Average using the law after conditioning, not the original PMF.",
+      "formulas": [
+        {
+          "expression": "E[X|A]=sum_x x p_X|A(x); E[X|Y=y]=sum_x x p_X|Y(x|y)",
+          "variables": {
+            "X,Y": "random variables",
+            "x,y": "values",
+            "A": "event",
+            "p": "conditional PMF"
+          },
+          "conditions": "Positive conditioning mass; conditional absolute integrability.",
+          "source": {
+            "source_id": "review",
+            "page": 23
+          }
+        }
+      ],
+      "prerequisites": [
+        "conditional-laws",
+        "expectation"
+      ],
+      "recognition": "Expected cost or count given partial information.",
+      "procedure": [
+        "Build the conditional PMF, then weight values.",
+        "Train Q2(e): given Bob green, Alice's prices 300,200,100 have probabilities 3/8,3/8,2/8, giving $212.50."
+      ],
+      "pitfalls": [
+        "Original probabilities are wrong after the observation changes the available outcomes."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 23
+        },
+        {
+          "source_id": "train-solution",
+          "page": 6,
+          "locator": "Q2(e)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 23
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 5,
+          "exam_id": "S2009",
+          "item_id": "Q2(e)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "total-expectation",
+      "name": "Total expectation",
+      "aliases": [
+        "average conditional means"
+      ],
+      "definition": "Compute a difficult mean by conditioning on simpler cases.",
+      "formulas": [
+        {
+          "expression": "E[X]=sum_i P(A_i)E[X|A_i]",
+          "variables": {
+            "X": "integrable random variable",
+            "A_i": "partition events",
+            "i": "case index"
+          },
+          "conditions": "Disjoint exhaustive positive-probability cases.",
+          "source": {
+            "source_id": "review",
+            "page": 23
+          }
+        }
+      ],
+      "prerequisites": [
+        "conditional-expectation",
+        "total-probability"
+      ],
+      "recognition": "A hidden type is chosen once and controls later behavior.",
+      "procedure": [
+        "Find the mean within each type, then weight by type probability.",
+        "Train Q3(e): choose one dice pair permanently; mean rolls is (3/4)/(2/5)+(1/4)/(1/4)=23/8."
+      ],
+      "pitfalls": [
+        "A mixture of geometric waiting times has mean averaged reciprocals, not reciprocal average success probability."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 23
+        },
+        {
+          "source_id": "train-solution",
+          "page": 9,
+          "locator": "Q3(e)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 23
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 8,
+          "exam_id": "S2009",
+          "item_id": "Q3(e)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "bernoulli-indicators",
+      "name": "Bernoulli variables and indicators",
+      "aliases": [
+        "indicator method"
+      ],
+      "definition": "An indicator is one when an event occurs and zero otherwise; a count is a sum of indicators.",
+      "formulas": [
+        {
+          "expression": "P(I=1)=p; P(I=0)=1-p; E[I]=p; Var(I)=p(1-p)",
+          "variables": {
+            "I": "Bernoulli indicator",
+            "p": "success probability"
+          },
+          "conditions": "0<=p<=1.",
+          "source": {
+            "source_id": "review",
+            "page": 26,
+            "locator": "Bernoulli row"
+          }
+        },
+        {
+          "expression": "E[sum_i I_i]=sum_i P(A_i)",
+          "variables": {
+            "I_i": "indicator of event A_i",
+            "i": "finite index"
+          },
+          "conditions": "No independence required; derived using Bernoulli means and linearity.",
+          "source": {
+            "source_id": "review",
+            "page": 20,
+            "locator": "Linearity, applied to indicators (Bernoulli row on p26)"
+          }
+        }
+      ],
+      "prerequisites": [
+        "expectation"
+      ],
+      "recognition": "Expected number of matches, occupied bins, or successes.",
+      "procedure": [
+        "Assign one indicator per object and sum its success probability.",
+        "Generated solution to lecture 7's hat exercise: each of n people gets their own hat with probability 1/n, so expected matches is 1 despite dependence."
+      ],
+      "pitfalls": [
+        "Linearity needs no independence; variance additivity does."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 26
+        },
+        {
+          "source_id": "review",
+          "page": 20
+        },
+        {
+          "source_id": "lecture-7",
+          "page": 2,
+          "locator": "Hat problem; extracted text reviewed"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 26
+        },
+        {
+          "kind": "teaching",
+          "source_id": "lecture-7",
+          "page": 2
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "binomial",
+      "name": "Binomial count",
+      "aliases": [
+        "fixed-trial successes"
+      ],
+      "definition": "Counts successes in a fixed number of independent trials with identical success probability.",
+      "formulas": [
+        {
+          "expression": "P(X=k)=C(n,k)p^k(1-p)^(n-k); E[X]=np; Var(X)=np(1-p)",
+          "variables": {
+            "X": "success count",
+            "n": "trial count",
+            "k": "successes",
+            "p": "success probability",
+            "C(n,k)": "binomial coefficient"
+          },
+          "conditions": "Independent identical Bernoulli trials; integer n>=0, 0<=k<=n; 0<=p<=1; zero elsewhere, endpoints by continuity.",
+          "source": {
+            "source_id": "review",
+            "page": 26,
+            "locator": "Binomial row"
+          }
+        }
+      ],
+      "prerequisites": [
+        "counting",
+        "bernoulli-indicators"
+      ],
+      "recognition": "Exactly k successes among n trials.",
+      "procedure": [
+        "Count placements and multiply by one sequence's probability.",
+        "Train Q1(j): given exactly two successes among four identical trials, each indicator's conditional mean is 2/4=1/2."
+      ],
+      "pitfalls": [
+        "Sampling without replacement is generally not binomial. Conditioning on a total makes trials dependent."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 26
+        },
+        {
+          "source_id": "train-solution",
+          "page": 4,
+          "locator": "Q1(j)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 26
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 3,
+          "exam_id": "S2009",
+          "item_id": "Q1(j)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "geometric",
+      "name": "Geometric waiting time",
+      "aliases": [
+        "first success",
+        "memorylessness"
+      ],
+      "definition": "Counts trials through the first success, including the successful trial. After failures, the remaining waiting time has the original law.",
+      "formulas": [
+        {
+          "expression": "P(T=k)=(1-p)^(k-1)p; E[T]=1/p; Var(T)=(1-p)/p^2",
+          "variables": {
+            "T": "trials through first success",
+            "k": "positive integer",
+            "p": "success probability"
+          },
+          "conditions": "Independent trials, constant 0<p<=1; zero outside positive integers; p=1 gives T=1.",
+          "source": {
+            "source_id": "review",
+            "page": 26,
+            "locator": "Geometric row"
+          }
+        }
+      ],
+      "prerequisites": [
+        "event-independence",
+        "pmf-cdf"
+      ],
+      "recognition": "Repeat until success, with a fresh identical chance each time.",
+      "procedure": [
+        "Name the stopping event first, even if the story calls it a failure. Check endpoints: p=0 has no finite stopping time; p=1 is deterministic. Then distinguish total trials, failures, and remaining trials.",
+        "Train Q1(g): after one failed driving test with independent pass probability 1/2, expected additional tests remains 2."
+      ],
+      "pitfalls": [
+        "Failures before success starts at zero and has mean 1/p-1."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 26
+        },
+        {
+          "source_id": "lecture-6",
+          "page": 2,
+          "locator": "Memoryless property"
+        },
+        {
+          "source_id": "train-solution",
+          "page": 3,
+          "locator": "Q1(g)"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 26
+        },
+        {
+          "kind": "teaching",
+          "source_id": "lecture-6",
+          "page": 2
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 2,
+          "exam_id": "S2009",
+          "item_id": "Q1(g)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "discrete-uniform",
+      "name": "Discrete uniform distribution",
+      "aliases": [
+        "equally likely integers"
+      ],
+      "definition": "Every integer in a consecutive finite interval has equal mass.",
+      "formulas": [
+        {
+          "expression": "P(X=k)=1/(b-a+1); E[X]=(a+b)/2; Var(X)=(b-a)(b-a+2)/12",
+          "variables": {
+            "X": "uniform integer",
+            "a,b": "integer endpoints",
+            "k": "integer value"
+          },
+          "conditions": "a<=k<=b, a<=b; PMF zero otherwise.",
+          "source": {
+            "source_id": "review",
+            "page": 26,
+            "locator": "Uniform row"
+          }
+        }
+      ],
+      "prerequisites": [
+        "pmf-cdf"
+      ],
+      "recognition": "Symmetry gives equal probability to each possible integer value.",
+      "procedure": [
+        "Count endpoints inclusively.",
+        "Generated example: uniform X on 1,...,6 has mean 7/2 and variance 35/12."
+      ],
+      "pitfalls": [
+        "Equal elementary outcomes do not make every derived variable uniform."
+      ],
+      "sources": [
+        {
+          "source_id": "review",
+          "page": 26
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "scope",
+          "source_id": "review",
+          "page": 26
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    },
+    {
+      "concept_id": "stopping-counts",
+      "name": "Stopping counts and repeated successes",
+      "aliases": [
+        "terminal-trial counting"
+      ],
+      "definition": "A stopping rule constrains the final trial and all earlier counts; repeated-success waiting times split into geometric blocks.",
+      "formulas": [
+        {
+          "expression": "P(U=u)=2*C(u-1,10)*(1/2)^u",
+          "variables": {
+            "U": "tosses until 11 heads or 11 tails",
+            "u": "stopping time",
+            "C": "binomial coefficient"
+          },
+          "conditions": "Independent fair tosses; 11<=u<=21, integer; zero otherwise.",
+          "source": {
+            "source_id": "train-solution",
+            "page": 10,
+            "locator": "Q3(h)"
+          }
+        }
+      ],
+      "prerequisites": [
+        "counting",
+        "geometric",
+        "expectation"
+      ],
+      "recognition": "Until the r-th success or either count reaches a boundary.",
+      "procedure": [
+        "Fix the terminal outcome; count valid prefixes and establish support.",
+        "Train Q3(f), corrected: eleven geometric blocks with p=3/4 give expected tails 11/(3/4)-11=11/3. The source's final 11/12 is an arithmetic error."
+      ],
+      "pitfalls": [
+        "A fixed-length binomial formula can include paths that should have stopped earlier."
+      ],
+      "sources": [
+        {
+          "source_id": "train-solution",
+          "page": 10,
+          "locator": "Q3(h)"
+        },
+        {
+          "source_id": "train-solution",
+          "page": 9,
+          "locator": "Q3(f); final arithmetic corrected using preceding expression"
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 9,
+          "exam_id": "S2009",
+          "item_id": "Q3(h)"
+        },
+        {
+          "kind": "exam",
+          "source_id": "train-exam",
+          "page": 8,
+          "exam_id": "S2009",
+          "item_id": "Q3(f)"
+        }
+      ],
+      "scope_status": "in",
+      "confidence": "high"
+    }
+  ],
+  "scope_notes": [
+    "23/23 means the authored review-topic inventory, not independently proven coverage of every chapter or exercise in the official scope.",
+    "Textbook chapters 1-2, recitations 1-7, problem sets 1-4 and tutorials 1-3 were not ingested; their additional topics remain unaudited.",
+    "All downloaded lecture pages were extracted, but lecture 1-3 content was not semantically reviewed. Exact visual-review coverage is in ../source-review.md.",
+    "Poisson and total variance were not supported by the reviewed sources and were omitted; this is not a claim that they are outside the complete official scope."
+  ]
+}

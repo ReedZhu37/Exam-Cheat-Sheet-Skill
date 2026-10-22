@@ -14,6 +14,8 @@ Original project code and documentation: Copyright (c) 2026 ReedZhu37, MIT Licen
 | python-pptx | MIT | https://github.com/scanny/python-pptx |
 | python-docx | MIT | https://github.com/python-openxml/python-docx |
 | jsonschema | MIT | https://github.com/python-jsonschema/jsonschema |
+| fontTools (embedded CFF/Type1 decoding) | MIT | https://github.com/fonttools/fonttools |
+| Pillow (raster image handling) | HPND-style PIL/Pillow license | https://github.com/python-pillow/Pillow |
 
 Transitive dependencies, optional OCR software, fonts, and platform-specific binary components have their own notices. The installed distribution is authoritative for the precise version and full component list; this table is not a complete binary redistribution manifest.
 

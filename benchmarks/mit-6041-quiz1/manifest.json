@@ -1,0 +1,1226 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "id": "review",
+      "path": "train/review.pdf",
+      "role": "slides",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65",
+        "size_bytes": 248218,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 27,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "Quiz I Review  \nProbabilistic Systems Analysis  \n  \nMassachusetts Institute of Technology \nQuiz I Review    1  / 26 \n6.041SC",
+            "text_sha256": "eaea514472db8357f8f1dd879ec33ce7becbef0d80c5a463f15b3db02ec3c7ee",
+            "page_sha256": "9e999ba8895967d96431c21f492d8f8c553560e4f38a0a0929dae3b87771f816",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "Quiz Information  \n•\t Content: Chapters 1-2, Lecture 1-7, Recitations 1-7, \nPsets 1-4, Tutorials 1-3 \nQuiz I Review\t    2 / 26 ",
+            "text_sha256": "0cb6007b64470d048dfed74cbfc6e8b397f8c9981a67de01dc395f5912771fd8",
+            "page_sha256": "5edf845cf32b55aef6bec1d2bde2d6f69685638729875752ea6b2b6ffcc3e823",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "A Probabilistic Model:  \n•\t Sample Space: The set of all possible outcomes of \nan experiment. \n•\t Probability Law: An assignment of a nonnegative \nnumber P(E) to each event E. \nEvent A\nEvent B\nEventsA B\nSample Space Probability Law\nExperiment P(A)\nP(B)\nQuiz I Review\t   3  / 26 ",
+            "text_sha256": "0d445e6a15c3bbc8009f6ab5fa39995674bb98b0befbe70291d1ddd5d80d83c4",
+            "page_sha256": "634862668c0d608b6f9a117fe00b88142f9edf76b6b38218f01360a901c2777b",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 4,
+            "anchor": "page:4",
+            "text": "Probability Axioms \nGiven a sample space Ω: \n1. Nonnegativity: P(A) ≥ 0 for each event  A \n2. Additivity: If A\n and B are disjoint events,  then \nP(A ∪ B) = P(A) + P(B) \nIf A1, A2, . . . , is a sequence of disjoint events, \nP(A1 ∪ A2 ∪··· ) = P(A1) + P(A2) + ··· \n3. Normalization P(Ω) = 1 \nQuiz I Review    4 / 26 ",
+            "text_sha256": "5169f1ed39e3553debace977eb35ab94e0587d56ca972cf271c72f75455c3c6d",
+            "page_sha256": "ae584d52e1ea73e5edecc6cec15b5633310ab2a22ee30d74b63c009ef3722d89",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0004.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 5,
+            "anchor": "page:5",
+            "text": "Properties of Probability Laws  \nGiven events A, B and C : \n1. If A ⊂ B, then P(A) ≤ P( B) \n2. P(A ∪ B) = P(\nA) + P(B) −  P(A ∩ B) \n3. P(A ∪ B) ≤ P\n(A) + P(B)  \n4. P(A ∪\n B ∪ C ) = P(A) + P(Ac ∩ B) + P(Ac ∩ Bc ∩ C ) \nQuiz I Review    5 / 26 ",
+            "text_sha256": "fd7b2c382eca1c6b379726fdb577cf951d917cae2ef8070446c76fce32e2ed50",
+            "page_sha256": "23c5f462faf1ba1bad90c8af676da4fb3aa10c85b25834ee7ce02d92f9c7be76",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0005.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 6,
+            "anchor": "page:6",
+            "text": "Discrete Models  \n•\t Discrete Probability Law: If Ω is ﬁnite, then each \nevent A ⊆ Ω can be expressed as \nA = {s1, s2, . . . , sn} si ∈ Ω \nTherefore the probability of the event A  is given as \nP(A) = P(s1) + P(s2) + + P(sn)··· \n•\t Discrete Uniform Probability Law: If all \noutcomes are equally likely, \nP(A) = |A||Ω| \nQuiz I Review\t    6 / 26 ",
+            "text_sha256": "3ac5fcfba69441c9ac37d93d04aed6041db3e8a1213230fc2c96313b9e179625",
+            "page_sha256": "7bc4feb9cd4a8a0fd5f34b373878ab6a64e83454cd7de56f802107462d9763c3",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0006.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 7,
+            "anchor": "page:7",
+            "text": "Conditional Probability \n•\t Given an event B with P(B) > 0, the conditional \nprobability of an event A ⊆ Ω is given as \nP(A|B) = P\n( \nP \nA \n( \n∩ \nB) \nB) \n• P(A B ) is a valid probability law on Ω, satisfying \n1. \n|\nP(A|B) ≥ 0 \n2.\t P(Ω B) = 1\n \n3.\t P(A1\n|\n∪ A2 ∪··· |B) = P(A1|B) + P(A2|B) + ··· , \nwhere {Ai }i is a set of disjoint events \n•\t P(A|B) can also be viewed as a  probability law on \nthe restricted universe B. \nQuiz I Review\t    7  / 26 ",
+            "text_sha256": "692a5c5c07a9ec05e03bd0ac9553f3136fa634a2f16cffcdba600d98d7bd406b",
+            "page_sha256": "b1baed983981f726f865e1d83a127a5ee6eb40153cdcde35dc77d64681dd57c3",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0007.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 8,
+            "anchor": "page:8",
+            "text": "� � \n� � \nMultiplication Rule \n• Let A1, . . . , An be a set of events such that \nn−1 \nP Ai > 0. =1i∩\nThen the joint probability of all events is  \nn n−1 \nP \ni\n∩\n=1 \nAi = P(A1)P(A2|A1)P(A3|A1∩A2) ··· P(An| i∩ Ai )=1 \nP(A1)\nA1\nA3\nA1 ∩ A2 ∩ A3A2\nP(A2|A1) P(A3|A1 ∩ A2)\nQuiz I Review    8 / 26 ",
+            "text_sha256": "8913d3b0a7bb2347d55cc079f8b124dfb19b975ce219802f6dd6db0787085444",
+            "page_sha256": "3c1bcb190b169bafcae17a3ef449582e45d7a000b95b4d240a960b2c8529788e",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0008.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 9,
+            "anchor": "page:9",
+            "text": "� � \nTotal Probability Theorem \nLet A1, . . . , An be disjoint events that partition Ω. If \nP(Ai ) > 0 for each i, then for any event B, \nn n \nP(B) = P(B ∩ Ai ) = P(B|Ai )P(Ai ) \ni=1 i=1 \nB\nA1 A2\nA3\nA1\nA2\nA3\nB\nB\nBc\nBc\nBc\nB\nA1 ∩ B\nA2 ∩ B\nA3 ∩ B\nQuiz I Review    9 / 26 ",
+            "text_sha256": "7d785cfdd501d8b96148910bdb2a5e91f08b3c286bda0c9c0d2b84255649bdce",
+            "page_sha256": "77a39d39c0cdd1ad6f23d4e51d3c97b86a3ae12fba6c316c0bf23a9ef2ebf3a9",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0009.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 10,
+            "anchor": "page:10",
+            "text": "Bayes Rule \nGiven a ﬁnite partition A1, . . . , An of Ω with P(Ai ) > 0, \nthen for each event B with P(B) > 0 \nP(Ai |B) = P(B|Ai )P(Ai ) = � n\ni \nP \n=1 \n(B|Ai \n| \n)P \ni \n(Ai ) \nAi )P(B) P(B A )P( \nB\nA1 A2\nA3\nA1\nA2\nA3\nB\nB\nBc\nBc\nBc\nB\nA1 ∩ B\nA2 ∩ B\nA3 ∩ B\nQuiz I Review    10 / 26 ",
+            "text_sha256": "9511906eb39c4c21a3be033585999d656ada6784ed4b64ba42bcca8f0ab09e15",
+            "page_sha256": "676d1b94884d8d5163e93a79de7c009980a64465a13659880f80fca744acc882",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0010.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 11,
+            "anchor": "page:11",
+            "text": "Independence of Events \n•\t Events A and B are independent if and only if \nP(A ∩ B) = P(A)P(B) \no\nr  \nP(A B ) = P(A\n) if P(B) > 0 | \n•\t Events A and B are conditionally independent \ngiven an event C if and only if \nP(A ∩ B|C ) = P(A|C )P(B| C ) \nor \nP(\nA|B ∩ C\n ) = P(A|C ) if P( B ∩ C ) >  0 \n• Independence\t � Conditional Independence. \nQuiz I Review\t    11 / 26 ",
+            "text_sha256": "1a6f3287700fa014e91a57c762f1cc4014d081905e1240c58b956e4bfd4d12c6",
+            "page_sha256": "4347c37fff004e5f88280f7ac2e19f0c7165abff0228ee3daafc84bc07c197dc",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0011.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 12,
+            "anchor": "page:12",
+            "text": "� \n� � � � \nIndependence of a Set of Events  \n•\t The events A1, . . . , An are pairwise independent if \nfor each i = j \nP(Ai ∩ Aj ) = P(Ai )P(Aj ) \n•\t The events A1, . . . , An are independent if \nP Ai = P(Ai ) ∀ S ⊆{1, 2, . . . , n}\ni∈S i ∈S \n•\t Pairwise independence � independence, but  \nindependence pairwise independence. ⇒ \nQuiz I Review\t    12 /  26 ",
+            "text_sha256": "52022d015c92b35a40549426de788380cd728a5ec57c66cb893d4b665a122c22",
+            "page_sha256": "3c11d5f1b221c9ac61017723027abb0d9179f6674c5c9a2e720ff6c7c8fad066",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0012.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 13,
+            "anchor": "page:13",
+            "text": "Counting Techniques  \n•\t Basic Counting Principle: For an m-stage process \nwith ni choices at stage i,  \n# Choices = n1n2 nm ··· \n•\t Permutations: k-length sequences drawn from n \ndistinct items without replacement (order is \nimportant): \n# Sequences = n(n − 1) ···  (n − k + 1) = (n− n! k)! \nCombinations: Sets with k elements drawn from n• \ndistinct items (order within sets is not important): � � \n# Sets = n = n! k k!(n−k)! \nQuiz I Review\t   13  / 26 ",
+            "text_sha256": "b611b7eb30a007640668b6a8a01769792bf4d38fd6bf90c41a76d97b1ae1c259",
+            "page_sha256": "b068fe0e4540e5b24ea352089159399631666115bde8e2fed443079cf7d70f8f",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0013.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 14,
+            "anchor": "page:14",
+            "text": "� � \n� \nCounting Techniques-contd  \n•\t Partitions: The number of ways to partition an n-element \nset into r disjoint subsets, with nk elements in the kth \nsubset: \n� � � �� � �\t � n = n n  −  n1 n − n1 −···− nr − 1 n1, n2, . . . , nr n1 n2 ··· nr \nn! = n1!n2!, , nr !··· \nwhere \nn n ! = k k!(n − k)! \nr \nni\t = n \ni=1 \nQuiz I Review\t    14 / 26 ",
+            "text_sha256": "3011d363bbe9a69e81cedd43070602909c7325b6d4609e9f90831a3792599f35",
+            "page_sha256": "7af7d5817d4152b31954642789bf615b3cc412140bd7f944a85eebe55cca66d7",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0014.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 15,
+            "anchor": "page:15",
+            "text": "Discrete Random Variables \nA random variable is a real-valued function • \ndeﬁned on the sample space: \nX\t : Ω R→ \n• The notation {X = x} denotes an event: \n{X = x}\n = {ω\n ∈ Ω|X  (ω) = x}⊆ Ω \n•\t The probability mass function (PMF) for the \nrandom variable X assigns a probability to each \nevent {X = x}: \n�\t � \npX (x) = P({X = x}) = P {ω ∈ Ω| X (ω) = x} \nQuiz I Review\t    15 / 26 ",
+            "text_sha256": "104de1bb6e15039faa710df2dc1f22815a3d4beebdd696916f18b0a9b1692cc7",
+            "page_sha256": "56bb053c6e44150e63d46aad74021c6d7e3c55168348f3dcdd3279213dc1a48f",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0015.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 16,
+            "anchor": "page:16",
+            "text": "� \n� \nPMF Properties \nLet X be a random variable and S a countable • \nsubset of the real line \n• The axioms of probability hold: \n1. pX (x) ≥ 0 \n2. P(X ∈ S) = pX (x)� x∈S \n3. x pX (x) = 1 \n• If g is a real-valued function, then Y = g(X ) is a \nrandom variable: \nω \nX \nX (ω) \ng \ng(X (ω)) = Y (ω) → →\nwith PMF \npY (y) = PX (x) \nx g (x)=y| \nQuiz I Review    16 / 26 ",
+            "text_sha256": "fc96fc032c8aec9cd445102cc848e9c73c1bcba280b65e8ddf469c92627f22e2",
+            "page_sha256": "317428a1781916106f41626aad4163949b707b6d8686d7bc6bc8ef77ef884abc",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0016.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 17,
+            "anchor": "page:17",
+            "text": "� \n� � \n� \nExpectation \nGiven a random variable X with PMF pX (x): \n• E[X ] = x xpX (x) \n• Given a derived random variable Y = g(X ): \nE[g(X )] = g(x)pX (x) = ypY (y) = E [Y ] \nx y \nE[X n] = x n pX (x)  \nx  \n• Linearity of Expectation: E[aX + b] = aE[X ] + b. \nQuiz I Review   17 /  26 ",
+            "text_sha256": "4a3036f7a966903bbe5007ec50a4ea8544d4acbdfebcb676c46c6a5bd0d7e55f",
+            "page_sha256": "e4a479a4f1cfd6e70dcf26f991d801236b1b4df9e72a08affb743ae219284b5e",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0017.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 18,
+            "anchor": "page:18",
+            "text": "� \n� \nVariance  \nThe expected value of a derived random variable g(X ) is \nE[g(X )] = g(x)pX (x) \nx \nThe variance of X is calculated as \nvar(X ) = E[(X − E[X  ])2] = (x − E[X ])2pX (x)x• \nvar(X ) = E[X 2] − E[X ]2 • \n• var(aX + b) = a2var(X ) \nNote that var(x) ≥ 0 \nQuiz I Review    18  / 26 ",
+            "text_sha256": "6cdbc66c11ee5d5ffacd54be9955af4455c3bc8472f0062cfd4936517b12faec",
+            "page_sha256": "0003d4ca3183df1bc3654b916ff40121139b5061167596888c27932c4552b808",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0018.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 19,
+            "anchor": "page:19",
+            "text": "� \n� \nMultiple Random Variables \nLet X and Y denote random variables deﬁned on a \nsample space Ω. \n• The joint PMF of X and Y is denoted by \n�\t � \npX ,Y (x, y) = P {X = x}∩{Y = y} \n•\t The marginal PMFs of X and Y are given \nrespectively as \npX (x) = pX ,Y (x, y) \ny \npY (y) = pX ,Y (x, y) \nx \nQuiz I Review\t    19 / 26 ",
+            "text_sha256": "eb2694e3c68940234584128f4ab1eb51d05072e546d46306c3ac9a750a22714c",
+            "page_sha256": "9e28e48ef82956ba886e08cf33cf337c1ae594673193297c69d517d5fca347b5",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0019.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 20,
+            "anchor": "page:20",
+            "text": "� \n� \nFunctions of Multiple Random Variables  \nLet Z = g(X , Y ) be a function of two random variables \nPMF:• \npZ (z) = pX ,Y (x, y) \n(x,y ) g (x,y )=z| \n• Expectation: \nE[Z ] = g(x, y)pX ,Y (x, y) \nx,y \n• Linearity: Suppose g(X , Y ) = aX + bY + c. \nE[g(X , Y )] = aE[X  ] + bE[Y ] + c \nQuiz I Review   20 /  26 ",
+            "text_sha256": "85787af5cf0773cf9da27f53b2a2eaf6bb6c2163d2e51f4ad5cc979ba67f54f4",
+            "page_sha256": "6baae0d291ed282d290df92a8f91b8e699796c9efa05a7a3cf595d2bc7668515",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0020.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 21,
+            "anchor": "page:21",
+            "text": "Conditioned Random Variables  \n•\t Conditioning X on an event A with P(A) > 0 results \nin the PMF: \n�\t � \npX |A(x) = P \n� \n{X = x}|A \n� \n= P {X P  =(Ax )}∩ A \n•\t Conditioning X on the event Y = y with PY (y) > 0 \nresults in the PMF: \n�\t � \npX Y (x y ) = P {X = � x}∩{Y � = y} = pX ,Y (x, y) | | P {Y = y} pY (y) \nQuiz I Review\t 21 /  26 ",
+            "text_sha256": "277bed110b5bbfc6277bc49b412bae0ed3cf3f0eb98e8df1d65f64dd9d5a1d59",
+            "page_sha256": "dd24abdcb4992f71761ae3f70759856353cdc611498939a00eadedec0b84da43",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0021.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 22,
+            "anchor": "page:22",
+            "text": "� \n� \nConditioned RV - contd  \n• Multiplication Rule: \npX ,Y (x, y) = pX |Y (x|y)pY (y) \n• Total Probability Theorem: \nn \npX (x) = P(Ai )pX A i (x)|\ni=1 \npX (x) = pX |Y (x|y)pY (y) \ny \nQuiz I Review 22 / 26 ",
+            "text_sha256": "2969f145000dbd2035acf9a5131bdd1fb6d8eac292c77e73300e396bb11cba70",
+            "page_sha256": "e128288ad3a96758744b15644b9cbcf1df27ff1aaaed0c72457a7e8cb25496dc",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0022.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 23,
+            "anchor": "page:23",
+            "text": "� \n� \n� \nConditional Expectation \nLet X and Y be random variables on a sample space Ω. \n•\t Given an event A with P(A) > 0 \nE[X A] = xpX A (x)| \nx \n| \n•\t If PY (y) > 0, then \nE[X |{Y = y}] = xpX |Y (x|y) \nx \n•\t Total Expectation Theorem: Let A1, . . . , An be a \npartition of Ω. If P(Ai ) > 0 ∀i, then \nn \nE[X ] = P(Ai )E[X A i ]|\ni=1 \nQuiz I Review\t 23 / 26  ",
+            "text_sha256": "58dab393f2c42f8e50f0d45bbdd290a3b677daabd6a46d3c9488dffd78d2ba30",
+            "page_sha256": "be701cb4632a566fc17763243f9e20ce9aa179db66279470866ebecbb9a090a8",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0023.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 24,
+            "anchor": "page:24",
+            "text": "Independence \nLet X and Y be random variables deﬁned on Ω and let A \nbe an event with P(A) > 0. \n•\t X is independent of A if either of the following hold: \npX |A(x) = pX (x) ∀x \npX ,A(x) = pX (x)P(A) ∀x \n•\t X and Y are independent if either of the following \nhold: \npX |Y (x|y) = pX (x) ∀x∀y \npX ,Y (x, y) = pX (x)pY (y) ∀x∀y \nQuiz I Review\t 24 /  26 ",
+            "text_sha256": "66360d3f44ed23e1092f47344990d8032cc0bb3bd8065a56efb496a4f0688435",
+            "page_sha256": "87756362ed4850045249f6687c51649a10b8fb8e4df464ad41661a4c4284c259",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0024.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 25,
+            "anchor": "page:25",
+            "text": "Independence  \nIf\tX and Y are independent, then the following hold: \n•\t If g and h are real-valued functions, then g(X ) and \nh(Y ) are independent. \n•\t E[XY ] = E[X ]E[Y ] (inverse is not true) \n• var(X + Y ) = var(X ) + var(Y ) \nGiven independent random variables X1, . . . , Xn, \nvar(X1 +X2+ \t+Xn) = var(X1)+var(X2)+ +var(Xn)··· ··· \nQuiz I Review\t 25 /  26 ",
+            "text_sha256": "f211f7c8f4607da76ff81922aba049ede4c0762cf0db3dc4b9a6b7f726254f1a",
+            "page_sha256": "51a73cb2c0337f4ea4da52c8194ed12fd5902d2e087ce685b49df44f80adf2ae",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0025.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 26,
+            "anchor": "page:26",
+            "text": "Some Discrete Distributions  \nX� pX (k)� E[X ] var(X ) \nBernoulli 1 success 0\n failur\ne \np k = 1  \n1 − p k = 0\n � � p p(1 − p) \nBinomial Number of successes in\n n Bernoulli trials \nn \nk pk (1 − p)n−k \nk = 0, 1, . . . , n np np(1-p) \nGeometric Number of trials until ﬁrst success (1 − p)k−1p k = 1, 2, . . . � 1 p 1−p p2 \nUniform An integer in the interval [a,b] 1 b−a+1 k = a, . . . , b 0 otherwise a+b 2 (b−a)(b−a+2) 12 \nQuiz I Review 26 /  26 ",
+            "text_sha256": "5faf01b36746a637f2d3049b8cff8938a2eeebc0b9291fb0b7cdb964e4f2f12e",
+            "page_sha256": "444a23839e40bfb57fdd98b4430652ace1aeb1ddfe7703f9adb93384ca62eb52",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0026.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 27,
+            "anchor": "page:27",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "4fc1a45a6f2b381bb45b73e798b636f95bc00ae98af7ba9041c23fb6d8b9642f",
+            "raster_path": ".local/extracted/c97ace4c8fef2cee-d72415297020c440b51f5d7c04aa107262d29fc4994f997927223a07b8fe2d65/page-0027.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/337c2b848282f31191196653a3fd7a45_MIT6_041SCF13_quiz01_revi.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:22.552046+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC review",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    },
+    {
+      "id": "train-exam",
+      "path": "train/train-exam.pdf",
+      "role": "past_exam",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68",
+        "size_bytes": 205865,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 10,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "� �\n� �\n� � � �\n� � � �\nMassachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nQuestion 1 \nMultiple Choice Questions: CLEARL Y circle the appropriate choice. Scratch paper is available if \nneeded, though NO partial credit will be given for the Multiple Choice. \na. Which of the following statements is NOT true? \n(i) If A\n ⊂ B, then P(A) ≤ P(B). \n(ii)\n If P\n(B) > 0, then P(A|B)\n ≥ P( A). \n(iii) P(A ∩ B) ≥ P\n(A) + P(B) − 1. \n(iv)\n P(A ∩ Bc) = P(A ∪ B) − P(B). \nb. We throw n identical\n balls into m\n urns at random, where  each urn is equally likely and each \nthrow is independent of any other throw. What is the probability that the i-th urn is empty? \nn \n(i) 11 − m \nm \n(ii) 1 − n 1 \n(iii) m 1 − n 1 m n \nn 1 n (iv) mm \nc. We toss two fair coins simultaneously and independently.\t If  the outcomes of the two coins are \nthe same, we win; otherwise, we lose. Let A be the event that the ﬁrst coin comes up heads, B \nbe the event that the second coin comes up heads, and C be the event that we win. Which of \nthe following statements is false? \n(i) Events A and B are independent. \n(ii) Events A\n and C are not independent. \n(iii) Events\n A and B are not conditionally independent given  C. \n(iv) The probability of winning is 1/2. \nd. For a biased coin,\n the probability of “heads” is 1/3.\t Let h  be the number of heads in ﬁve \nindependent coin tosses. What is the probability P(ﬁrst toss is a head | h = 1 or h = 5)? \n)5 \n)5 \n( )4 \n)4+(\n( )4 \n)4+(\n5\n(iii)\n(iv) 51 \n(i)\n(ii)\n)5 \n)5 \n21 \n33\n12 \n33(1 3\n21 \n33\n12 \n33(1 3\n1 \n1 \n3)4+(\n)4+( 3\n2 \n3(\n( 2 3\n1 \n3\n5 1 3\n1\n(Quiz 1 | Spring 2009)",
+            "text_sha256": "53e5a15f76c235cfddac9f0e92ff73e6a25dbe66dc06c65c7d043f7bf0384437",
+            "page_sha256": "ea4fc4775723d8a6516f4555399044f827a878d910b45f62c4a91f443baae48d",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "� \nMassachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \ne. A well-shuﬄed deck of 52 cards is dealt evenly  to two players (26 cards each).\t What is the \nprobability that player 1 gets all the aces? \n0 1 \n48@ A \n22 (i) 0 1 \n52@ A \n26 \n0 1 \n48 4@ A \n22 (ii)\t 0 1 \n52@ A \n26 \n(iii)\t 48! 52!\n22! 26!\n0 1 \n48 4!@ A \n22 (iv) 0 1 \n52@ A \n26 \nf. Suppose X, Y and Z are three independent  discrete random variables. Then, X and Y + Z are \n(i) always \n(ii) sometimes \n(iii) never \nindependent. \ng. T\no obtain a driving\n licence, Mina needs\n to pas s her driving test. Every time Mina takes a driving \ntest, with probability 1/2, she will clear the test independent of her past. Mina failed her ﬁrst \ntest. Given this, let Y be the additional number of tests Mina takes before obtaining a licence. \nThen, \n(i) E[Y ] = 1. \n(ii) E[Y ] =\n 2. \n(iii)\t E[Y ] =\n 0. \nh. Consider two\n random variables X and Y  , each taking values in {1, 2, 3}. Let their joint PMF b e \nsuch th\nat for any 1 ≤ x, y ≤ 3, \nPX,Y (x, y) = 0 if (x, y) ∈{ (1, 3), (2, 1) , (3, 2)}strictly p ositive otherwise. \nThen, \n(i) X and Y can b\ne independent or dep endent depending upon the strictly positive values. \n(ii) X and Y are always independent. \n(iii)\n\t X and Y can never be independent.  \n2\n(Quiz 1 | Spring 2009)",
+            "text_sha256": "5793fb7f344c168ada180dac36e1be5b1730ffbb9c582d97eae51eed16a79026",
+            "page_sha256": "0659446ba6b37a8a39be0c79a3bc83dc0331a1692923a93ae73bccb428e5405f",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \ni. Suppose you play a matching coins game  with your friend as follows. Both you and your friend \nhave a coin. Each time, you two reveal a side (i.e. H or T) of your coin to each other simulta­\nneously. If the sides match, you WIN a 1 from your friend and if sides do not match then you \nlose a 1 to your friend. Your friend has a complicated (unknown) strategy in selecting the sides \nover time. You decide to go with the following simple strategy. Every time, you will toss your \nunbiased coin independently of everything else, and you will reveal its outcome to your friend (of \ncourse, your friend does not know the outcome of your random toss until you reveal it). Then, \n(i) On average, you will lose money to y our smart friend. \n(ii) On average, you will neither lose nor win. That  is, your average gain/loss is 0. \n(iii) On average, you will make money from  your friend. \nj. Let\t Xi, 1 ≤ i ≤ 4 be independent Bernoulli random variable each with  mean p = 0.1. Let \nX = �i4=1 Xi. That is, X is a Binomial random variable with parameters n = 4 and p = 0.1. \nThen, \n(i) E[X1|X = 2] = 0.1. \n(ii) E[X1|X = 2] = 0.5. \n(iii) E[X1|X = 2] = 0.25. \n3\n(Quiz 1 | Spring 2009)",
+            "text_sha256": "375b4ddd500b431f7f1955e6432ff67e8a62e1036135b89ffc7e2b2e13c37ce9",
+            "page_sha256": "ae90c72230f937c881172b2af4789cd7df7dc4210f8d730fb97ea91fb08bbba7",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 4,
+            "anchor": "page:4",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nQuestion 2: \nAlice and Bob both need to buy a bicycle.  The bike store has a stock of four green, three yellow, \nand two red bikes. Alice randomly picks one of the bikes and buys it. Immediately after, Bob does \nthe same. The sale price of the green, yellow, and red bikes are $300, $200 and $100, respectively. \nLet A be the event that Alice b ought a green bike, and B be the event that Bob bought a green \nbike. \na. What is P(A)? What is P( A|B)? \nb. Are A and B independent\n events?  Justify your answer. \nc. What is the probability that at least one of  them bought a green bike? \n4\n(Quiz 1 | Spring 2009)",
+            "text_sha256": "ce8bf86b4d4e4bd1e97a9af2d4db8323f5ddec16fa57320d5e44031ee67d2e0d",
+            "page_sha256": "61d8a83f1984eebfca0b112d030b65649b3a700bc1891584af1c1b9816fd9ff3",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0004.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 5,
+            "anchor": "page:5",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nd. What is the probability that Alice and Bob bough t bicycles of diﬀerent colors?\ne. Given that Bob bought a green  bike, what is the expected value of the amount of money spent \nby Alice? \nf. Let G be the number of green bik es that remain on the store after Alice and Bob’s visit. Compute \nP(B|G = 3). \n5\n(Quiz 1 | Spring 2009)",
+            "text_sha256": "63592ceebf49d4ee7bb1f611609c05a59649bd6a2fa7f523aa5f919d592a3c78",
+            "page_sha256": "df12ff443b05afc0cbef6deae61fbe058bab798b7b67a5c5fb14f8b7472d4599",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0005.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 6,
+            "anchor": "page:6",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nQuestion 3: \nMagic Games Inc. is a store that sells all sorts  of fun games. One of its popular products is its \nmagic 4-sided dice. The dice come in pairs; each die can be fair or crooked, and the dice in any pair \ncan function independently or, in some cases, can have magnets inside them that cause them to behave \nin unpredictable ways when rolled together. \nXavier and Yvonne together buy a pair of  dice from this store. Each of them picks a die in the \npair; one of them then rolls the two dice together. Let X be the outcome of Xavier’s die and Y the \noutcome of Yvonne’s die. The joint PMF of X and Y , pX,Y (x, y), is given by the following ﬁgure: \nY \n4 1 20 1 20 1 20 1 10 \n3 1 20 1 20 1 10 1 20 \n2 1 20 1 10 1 20 1 20 \n1 1 10 1 20 1 20 1 20 \n1 2 3 4 \nX \n(a) Find the PMF of the outcome of Xavier’s die,  pX (x). \n(b) Find the PMF of the outcome of Yvonne’s d ie, pY (y). \n(c) Are X and Y independent? \n6\n(Quiz 1 | Spring 2009)",
+            "text_sha256": "03796423f4bc226708bdc25dd9fc9b0729124e12825d36db4601e6d4e8a0226d",
+            "page_sha256": "e11490d6089da95a06bbd97bd480b0132fae50e8a369c19056b979ae9aa1736b",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0006.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 7,
+            "anchor": "page:7",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nZach and Wendy are intrigued by Xavier and Yvonne’s dice; they visit the store and buy a pair \nof dice of their own. Again, each of them picks a die in the pair; one of them then rolls the two dice \ntogether. Let Z be the outcome of Zach’s die and W the outcome of Wendy’s die. The joint PMF of \nZ and W , pZ,W (z, w), is given by the following ﬁgure: \nW \nZ \nThe store also sells a variety of magic  coins, some fair and some crooked. Alice buys a coin that \non each toss comes up heads with probability 3/4. \n(d) Wondering whether to buy some dice as well,  Alice decides to try out her friends’ dice ﬁrst. She \ndoes the following. First, she tosses her coin. If the coin comes up heads, she borrows Xavier \nand Yvonne’s dice pair and rolls the two dice; if the coin comes up tails, she borrows Zach and \nWendy’s dice pair and rolls those instead. What is the probability that she rolls a double, i.e., \nthat both dice in the pair she rolls show the same number? \n4 1 12 1 24 1 12 1 24 \n3 1 12 1 24 1 12 1 24 \n2 1 12 1 24 1 12 1 24 \n1 1 12 1 24 1 12 1 24 \n1 2 3 4 \n7\n(Quiz 1 | Spring 2009)",
+            "text_sha256": "18ab8a445cf2ff65fd0fdbbe330b4a5a96ae8a30aec497e08005cc709e59cc06",
+            "page_sha256": "2d1549faf64bd41dfe53be3db7e174e80c4913a4da792ff4b184427fadfa1c9c",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0007.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 8,
+            "anchor": "page:8",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \n(e) Alice has still not made up her mind abou t the dice. She tries another experiment.\t First, she \ntosses her coin. If the coin comes up heads, she takes Xavier and Yvonne’s dice pair and rolls the \ndice repeatedly until she gets a double; if the coin comes up tails, she does the same with Zach \nand Wendy’s dice. What is the expected number of times she will need to roll the dice pair she \nchooses? (Assume that if a given pair of dice is rolled repeatedly, the outcomes of the diﬀerent \nrolls are independent.) \n(f) Alice is bored wi th the dice and decides  to experiment with her coin instead. She tosses the coin \nuntil she has seen a total of 11 heads. Let R be the number of tails she sees. Find E[R]. (Assume \nindependent tosses.) \n8\n(Quiz 1 | Spring 2009)",
+            "text_sha256": "63446fa78e994c35661ad46064e195fa1b84f2560f167f16ef0bdfdc3dedd5e1",
+            "page_sha256": "0656b41c7a111b23786692cf2bc15a1e3bca536c906bf8d6a428868529e67aae",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0008.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 9,
+            "anchor": "page:9",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \n(Quiz 1 | Spring 2009)\n(g) Alice is still playing with her coin. Let A be the event that the second head she sees occurs on \nthe 7th coin toss, and let S be the position of the ﬁrst head. Find the conditional PMF of S \ngiven the event A, pS A (s). |\n(h) Alice’s friend Bob buys a coin from the same store that turns out to be fair, i.e., that on any \ntoss comes up heads with probability 1/2. He tosses the coin repeatedly until he has seen either \na total of 11 heads or a total of 11 tails. Let U be the number of times he will need to toss the \ncoin. Find the PMF of U, pU (u). (Assume independent tosses.) \n9",
+            "text_sha256": "0913bb28582a55154d930f679ee5e1df037841225cf5131d676ad5221e4029d6",
+            "page_sha256": "b23b2946c927bb722164f717b2618ec109b19837bed38378002e223a58c03d6d",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0009.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 10,
+            "anchor": "page:10",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "2839df940729aafc6cc6e53888db0a194ec611a9e0683b02a31cc9f70fc71aa7",
+            "raster_path": ".local/extracted/cf5ad32b22de2fcd-45a626ba331edc9493c19cc7b634ed0e8662c9d0db21062d553d6a12bf47bd68/page-0010.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/dd524390df7bb78133d1bff2fc5d13ae_MIT6_041SCF13_quiz01_s09.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:22.815454+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC train-exam",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    },
+    {
+      "id": "train-solution",
+      "path": "train/train-solution.pdf",
+      "role": "solution",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce",
+        "size_bytes": 707027,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 11,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "� � � �\n� �\nMassachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nQuestion 1 \nMultiple Choice Questions: CLEARL Y circle the appropriate choice. Scratch paper is available if \nneeded, though NO partial credit will be given for the Multiple Choice. Each multiple choice \nquestion is worth 4 points. \na. Which of the following statements  is NOT true? \n(i) If A ⊂ B, then P(A ) ≤  P(B). \n(ii) If P(B) > 0, then P (A|B) ≥ P(A). \n(iii)\n P(A ∩ B) ≥ P(A) +  P(B) − 1. \n(iv)\n P(A ∩ Bc) = P(A ∪ B) − P(B). \nSolution: A\n counterexample: if we ha ve two events A, B such that P (B) > 0 and P (A) > 0, \nbut A ∩ B = φ, then P (A |B) = 0, but P (A ) >P (A|B). It’s easy to come up with  examples like \nthis: for example, take any sample space with event A such that P (A) > 0, and P (Ac > 0), it \nfollows that P (A|Ac) = 0, but P (A) > 0. \nb. We throw n identical balls in to m urns at random, where each urn is equally likely and each \nthrow is independent of any other throw. What is the probability that the i-th urn is empty? \n� �n \n(i) 1 − 1 m \n(ii) \n� \n1 − 1 n \n�m \n(iii) \n� m \nn \n� � \n1 − 1 n \n�m \n(iv) n 1 n \nm m \nSolution: The probability of the jth ball going into the ith urn is 1/m. Hence, the probability \nof the jth ball not going into the ith urn is (1 − 1/m). Since all throws are independen t from \none another, we can multiply these probabilities: the probability of all n balls not going into the \n1\t nith urn, i.e. it is empty, is 1 − m . \nc. We toss two fair coins simultaneously  and independently.\tIf the outcomes of the two coin tosses \nare the same, we win; otherwise, we lose. Let A be the event that the ﬁrst coin comes up heads, \nB be the event that the second coin comes up heads, and C be the event that we win. Which of \nthe following statements is true? \n(i) Events A and B are not indep endent. \n(ii) Events A and C are independen t. \n(iii) Events A and B are conditionally indep endent given C. \n(iv) The probability of winning is 3/4. \nSolution: The\n sample space in this case  is Ω = {(H, H), (H, T ) , (T,H ), (T,T )}. The prob­\nability law is a\n uniform distribution over this space. We have A = {(H, H), (H, T )} , B = \n{(H, H)\n, (T,H )} , and C = {(H,  H), (T,T )} . By the discrete uniform law,  P (A) = P (B) = \n(Quiz 1 Solutions| Spring 2009)\n1",
+            "text_sha256": "b84fbcf19dff38ead93c2b6428a066ef239256882161e77b447e2a6f095ada03",
+            "page_sha256": "ac5bc2545ad98d309ae07e477aab961365ed11c9fc1aed31b203e703319ad27c",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "= � � � � . \nMassachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nP (C) = 1/2. We also have P (A ∩ C) = 1/4, hence P (A ∩ C) = P (A)P (C),  and the two events \nare independent. Intuitively, knowing that you won adds no information about whether your \ncoin turned up heads or not: stating this formally, we have P (A|C) = P (A). \nd. For\n a biased coin, the probability of  “heads” is 1/3.\t Let H be the number of heads in ﬁve \nindependent coin tosses. What is the probability P(ﬁrst toss is a head | H = 1 or H = 5)? \n1 2 )4(\n(i)\n 3 3\n1 2 1)4+( )55 (3 3 3\n1 2 )4(\n(ii)\n 3 3\n1 2 1)4+( )5(3 3 3\n( ) 4+( ) 5 \n5 ( ) 4+( ) 51 3\n1 \n3\n2 \n3\n2 \n3\n1 \n3\n1 \n3(iii)\n(iv) 1 5 \nSolution: Let A be the event that the ﬁrst toss is a head. \nP (A|{H = 1} or {H  = 5}) = P (A ∩ ({H = 1 }∪{H = 5})) P ({H = 1}∪{H = 5}) \nP ((A ∩{H = 1}) ∪  (A ∩{H = 5})= P ({H = 1}∪{H = 5}) \nP ({H = 5}) + P (A ∩{H = 1} )= P ({H = 1}) + P ({H = 5}) \n(1/3)5 + (1/3)(2/3)4 \n5\t 5(1/3)(2/3)4 + (1/3)5 1\t 5 \ne. A well-shuﬄed deck of 52 cards is dealt  evenly to two players (26 cards each).\t What is the \nprobability that player 1 gets all the aces? \n(i)\n0 1 \n48@ A \n22 \n0 1 26×25×24×23= 52 52×51×50×49 @ A  \n26 \n0 1 \n(ii) \n4@\n0 \n@ \n48 \n22 \n52 \nA \n1 \nA \n= 4 × 26×25×24×23 52×51×50×49 \n26 \n(iii) 48! 22! 52! 26! 0 1 \n48 4!@ A \n22 26×25×24×23(iv) 0 \n52 \n1 = 4! × 52×51×50×49 \n@ A \n26 \n(Quiz 1 Solutions| Spring 2009)\n2",
+            "text_sha256": "cd2167bff2717a965ede7aca641492fc54df25907a815b7432e8ed5499220850",
+            "page_sha256": "f3f34cb093c15e51127409dff3cf0579a84fe8f5c37eadd0cb95f2639d173472",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "� � \nMassachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nSolution: Let A be the event that player 1 gets all aces. By the disrete uniform law, \nP (A) = |A| . (1)| Ω| \n52|Ω| = 26 is the number of hands (26 cards from 52) player 1 can have. Additionally, once we \nhave given player 1 all aces, then they must be given an additional 22 cards from the remaining \n48 cards in the deck. Hence, � �48 \nP (A) = �22�52 \n26 \nf. Suppose X, Y and Z are three indep endent discrete random variables. Then, X and Y + Z are \n(i) always \n(ii) sometimes \n(iii) never \nindependen\nt. \nSolution: Since X is\n independent\n of Y  and Z, X is independent of g(Y, Z) for any function \ng(Y, Z), including g(Y, Z) = Y + Z (see page 114 of the book). \ng. To obtain a driving licence, Mina needs to  pass her driving test. Every time Mina takes a driving \ntest, with probability 1/2, she will clear the test independent of her past. Mina failed her ﬁrst \ntest. Given this, let Y be the additional number of tests Mina takes before obtaining a licence. \nThen, \n(i)\tE[Y ] = 1. \n(ii) E[Y ]\n = 2. \n(iii) E[Y ]\n = 0. \nSolution: Y is\n deﬁned as the numb er of additional tests Mina takes, so this is independent of \nthe fact that she failed her ﬁrst test. Y is a geometric RV with p = 1/2. Hence, E[Y ] = 1/p = 2. \nh. Consider two random variables X and Y ,  each taking values in {1, 2, 3}. Let their joint  PMF be \nsuc\nh that for any 1 ≤ x, y ≤ 3, PX,Y (x, y) = 0 if (x, y) ∈{ (1, 3), (2, 1), (3,  2)}, and PX,Y (x, y) > 0 \nif (x, y) ∈{ (1, 1), (1, 2), (2,  2), (2, 3), (3, 1), (3.3)}. Then, \n(i)\tX and Y can be independent  or dependent depending upon the values of PX,Y (x, y) for \n(x, y) ∈{ (1, 1), (1, 2), (2,  2), (2, 3), (3, 1), (3.3)}. \n(ii)\tX and Y are always independen t. \n(iii) X and Y can never be indep endent. \nSolution: If, for example, we are given  information that X = 1, we know that Y can never take \nvalue 3. However, without this information about X the probability pY (3) is strictly positive \nand so pY |X (y|x) =� pY (y), for x = 1 and y = 3, i.e. X and Y can never be independent. \n(Quiz 1 Solutions| Spring 2009)\n3",
+            "text_sha256": "eadcf733bb5f72fef179ee3b407dd5e67489c568139b65f700de9072e3bbcc4d",
+            "page_sha256": "e5256b1f7dbc58a916871522a49c0950b5e054baee32d1ad49caebbcc4f904d2",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 4,
+            "anchor": "page:4",
+            "text": "= � � \n� � \n� � � � \nMassachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \ni. Suppose you play a matching coins  game with your friend as follows. Both you and your friend \neach have your own coin. Each time, the two of you reveal a side (i.e. H or T) of your coin \nto each other simultaneously. If the sides match, you WIN $1 from your friend and if sides do \nnot match then you lose $1 to your friend. Your friend has a complicated (unknown) strategy in \nselecting the sides over time. You decide to go with the following simple strategy. Every time, \nyou will toss your unbiased coin independently of everything else, and you will reveal its outcome \nto your friend (of course, your friend does not know the outcome of your random toss until you \nreveal it). Then, \n(i) On average, you will lose money to  your smart friend. \n(ii) On average, you will neither lose nor win.  That is, your average gain/loss is 0. \n(iii) On average, you will make money  from your friend. \nSolution: Let Xi be a random variable denoting your winnings at the i’th round of the game, \ni.e., Xi = 1 if you win, Xi = −1 if you lose. At each round  your friend chooses either heads or \ntails, using some strategy that you don’t know about. The key property is that for any choice \nthat you friend makes, we have pXi (1) = pXi (−1) = 0.5: i.e., we alw ays have a 0.5 probability \nthat our coin toss will match the choice made by our friend. It can be veriﬁed that E[Xi] = 0, \nand hence your average gain/loss is 0. \nj. Let Xi, 1 ≤ i ≤ 4 be independent Bernoulli random variables each  with mean p = 0.1. Let�4X = i=1 Xi. Then, \n(i) E[X1|X = 2] = 0.1. \n(ii) E[\nX1|X = 2] = 0.5. \n(iii) E[X1|X = 2] = 0.25. \nSolution: W\ne have P (X1 = 1|X = 2) = 0.5, because  \nP (X1 = 1 ∩ X = 2) P (X1 = 1|X = 2) = P (X = 2) \np\n × 13 p(1 − p)2 \n4 p2(1 − p)2 \n� �2 3 \n= �1� = 0.54 \n2 \n(Note that 4 p2(1 − p)2 is the probability of seeing 2 heads out of 4 tosses, and 3 p(1 − p)2 is2 1 \nthe probability of seeing 1 head in the last 3 tosses.) \nHence,\nE[X1|X = 2] = 1 × P (X1 = 1|X = 2) + 0 × P (X1 = 0|X = 2) = 0.5\n(Quiz 1 Solutions| Spring 2009)\n4",
+            "text_sha256": "4ed1966c002a9823fc4b3c74e6139ad1c6298eadedc9eba99d8f0672ff94c1ca",
+            "page_sha256": "0b419fc082c84c0918337cb91b4fd9c3781d3ef9b1b91c4de033c3819a0be30a",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0004.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 5,
+            "anchor": "page:5",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nQuestion 2: \nAlice and Bob both need to buy a  bicycle. The bike store has a stock of four green, three yellow, \nand two red bikes. Alice randomly picks one of the bikes and buys it. Immediately after, Bob does \nthe same. The sale price of the green, yellow, and red bikes are $300, $200 and $100, respectively. \nLet A be the event that Alice  bought a green bike, and B be the event that Bob bought a green \nbike. \na. (5 points) What is P(A)? What  is P(A|B)? \nSolution: We have P\n(A) = 4/9 (4 green bikes out of 9), and P(A|B) = 3/8 (since we know that  \nBob has a green bike, Alice can have one of 3 green bikes out of the remaining 8). \nb. (2 points) Are A and B independen t events? Justify your answer. \nSolution: Since P(A) =� P(A |B), the events are not independent.  Informally, since there is \na ﬁxed quantity of green bikes, if Alice buys one, then the chances that Bob buys one too are \nslightly decreased. \nc. (5 points) What is the probability that  at least one of them bought a green bike? \nSolution: The requested probability is P( A ∪ B). We have \nP(A ∪ B)\n= P(A) + P( B) − P(A ∩ B) \n= P(A) + P\n(B) − P(A|B) · P(B) \n4 4 3\n4 13 = +\n = = 0.722.9 9  − 8 · 9 18 \n(Quiz 1 Solutions| Spring 2009)\n5",
+            "text_sha256": "7598772f18f9d38e279d218c8701ac7a8fa694b8620c01863fcf4975dff76f82",
+            "page_sha256": "8a2400c6907b944d44156264aa89bc714aeb317d62f7eb8a97c16d4d4b45c8ad",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0005.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 6,
+            "anchor": "page:6",
+            "text": "� � \nMassachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nd. (5 points) What is the probability that  Alice and Bob bought bicycles of diﬀerent colors?\nSolution: Let’s compute ﬁrst the probability that Alice  and Bob bought bikes of the same color. \nWe have 4 3 3 2 2 1P({G, G} ) = , P({Y, Y  }) = , P({ R, R} ) = .9 · 8 9 · 8 9 ·  8\nTherefore, the probabilit\ny of buying bikes  of diﬀerent color is\n12 6 2 13P(diﬀerent color) = 1 − P(same color)  = 1 − 72 + 72 + 72 = 18 = 0. 722. \ne. (5 poin\nts) Given that Bob bough t a green bike, what is the expected value of the amount of \nmoney spent by Alice? \nSolution: If Bob bought a green bik e, then the conditional probabilities of Alice buying a green, \nyellow, or red bike are\n 3 3and\n 2 \n8 , respectively. The expected amount of money spent by Alice\n,\n8 8\nis therefore 3 3 2$300 + $200 + $100 = $212.50 .· 8 · 8 · 8 \nf. (5 points) Let G be the nu mber of green bikes that remain in the store after Alice and Bob’s \nvisit. Compute P(B|G = 3). \nSolution: If G = 3, then\n exactly  one green bike was bought. By symmetry, there is equal chance \nthat Alice or Bob bought it, th us P(B|G = 3) =\nof A that are not in\n B. We have: \n1 \n2 . Alternatively, deﬁne A \\ B as the elements\nP(B|\nG = 3) = P(B|{A \\  B}∪{B \\ A}) \nP(B \\ A) 20/\n72 1 = = =  .P({A \\ B}∪ {B \\ A}) 40/72 2\n(Quiz 1 Solutions| Spring 2009)\n6",
+            "text_sha256": "6c6c83dd3b8e32ad0aeb33ed3dcbc3a8f3be9fc3f5072bf6ea35d3a143453bdc",
+            "page_sha256": "3ef0a74c8a3b1067d057084dbb6784158fb6f8cfd7719bb91faced5021bc7ec3",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0006.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 7,
+            "anchor": "page:7",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nQuestion 3: \nMagic Games Inc. is a store that sells all  sorts of fun games. One of its popular products is its \nmagic 4-sided dice. The dice come in pairs; each die can be fair or crooked, and the dice in any pair \ncan function independently or, in some cases, can have magnets inside them that cause them to behave \nin unpredictable ways when rolled together. \nXavier and Yvonne together buy a pair  of dice from this store. Each of them picks a die in the \npair; one of them then rolls the two dice together. Let X be the outcome of Xavier’s die and Y the \noutcome of Yvonne’s die. The joint PMF of X and Y , pX,Y (x, y), is given by the following ﬁgure: \nY \n4 1 20 1 20 1 20 2 20 \n3 1 20 1 20 2 20 1 20 \n2 1 20 2 20 1 20 1 20 \n1 2 20 1 20 1 20 1 20 \n1 2 3 4 \nX \n(a) (2 points) Find the PMF of the outcome  of Xavier’s die, pX (x). \nSolution: \n4 �� 1 x = 1, 2, 3, 4 pX (x) = pX,Y (x, y) = 4 0 o.w. y=1 \n(b) (2 points) Find the PMF of the outcome  of Yvonne’s die, pY (y). \nSolution: \n4 � \npY (y) = \n� \npX,Y (x, y) = 4\n1 y = 1, 2, 3, 4 \n0 o.w. x=1 \n(c) (2 points) Are X and Y independent? \nSolution: No. One of many counter examples: pX (x) does not equal pX|Y (x|2).\n(Quiz 1 Solutions| Spring 2009)\n7",
+            "text_sha256": "758362af275f0f9141d706190141977bf1b77bcc640b06a99f5cdf5acb922e7e",
+            "page_sha256": "443e12278375bc4010cd19820ba2360a7c75419d8d203de1614eb4d153a2c5a0",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0007.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 8,
+            "anchor": "page:8",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \nZach and Wendy are intrigued by Xavier and Yvonne’s dice. They visit the store and buy a pair \nof dice of their own. Again, each of them picks a die in the pair; one of them then rolls the two dice \ntogether. Let Z be the outcome of Zach’s die and W the outcome of Wendy’s die. The joint PMF of \nZ and W , pZ,W (z, w), is given by the following ﬁgure: \nW \nZ \nThe store also sells a variety of  magic coins, some fair and some crooked. Alice buys a coin that \non each toss comes up heads with probability 3/4. \n(d) (5 points) Wondering whether to buy some dice  as well, Alice decides to try out her friends’ dice \nﬁrst. She does the following. First, she tosses her coin. If the coin comes up heads, she borrows \nXavier and Yvonne’s dice pair and rolls the two dice. If the coin comes up tails, she borrows \nZach and Wendy’s dice pair and rolls those instead. What is the probability that she rolls a \ndouble, i.e., that both dice in the pair she rolls show the same number? \nSolution: Let event D be the  set of all doubles, and let event A be the event that Alice’s coin \ntoss results in heads. Using the law of total probability: \nP (D) =\t P (D|A)P  (A) + P (D|Ac)P (Ac) \n3 4 1 1 =\t +4 × 10 4 × 4 \n58 = = .3625160\n \n4 2 24 1 24 2 24 1 24 \n3 2 24 1 24 2 24 1 24 \n2 2 24 1 24 2 24 1 24 \n1 2 24 1 24 2 24 1 24 \n1 2 3 4 \n(Quiz 1 Solutions| Spring 2009)\n8",
+            "text_sha256": "cfb0a038d7b60004fc366b0ba9299c547909186cf6c326f3881cd9acb5d8df00",
+            "page_sha256": "324d0770233241cee46d489eea5f1e18f9ef6383a80ca9c64bce5600db8d99b8",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0008.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 9,
+            "anchor": "page:9",
+            "text": "Massachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \n(e) (5 points) Alice has still not made up her  mind about the dice. She tries another experiment. \nFirst, she tosses her coin. If the coin comes up heads, she takes Xavier and Yvonne’s dice pair \nand rolls the dice repeatedly until she gets a double; if the coin comes up tails, she does the same \nwith Zach and Wendy’s dice. What is the expected number of times she will need to roll the dice \npair she chooses? (Assume that if a given pair of dice is rolled repeatedly, the outcomes of the \ndiﬀerent rolls are independent.) \nSolution: Let random variable N be the  number of rolls until doubles is rolled. The distribution \non N condition on the set of dice being rolled is a geometric random variable. Using the total \nexpectation theorem, the expected value of N is: \nE[N] =\t E[N|A]P ( A) + E[N|Ac]P (Ac) \n3 1 1 1 =\t +4 ×\n 4 ×\n4 \n10 \n1 \n4 \n23 = = 2.8758 \n(f) (5 poin\nts) Alice is bored with  the dice  and decides to experiment with her coin instead.\t She \ntosses the coin until she has seen a total of 11 heads. Let R be the number of tails she sees. Find \nE[R]. (Assume independent tosses.) \nSolution:\t The time T until Alice sees a  total of 11 heads is the sum of 11 independent and \nidentically distributed geometric random variables  with parameter p =\n 3 \n4 . Random variable R,\nthe number of tails she sees, is T −  11. Thus: \nE[R] = E[T ] − 11 \n111\n ×\n − 11\n=\n 3 \n4\n11 = =  .916712 \n(Quiz 1 Solutions| Spring 2009)\n9",
+            "text_sha256": "165ee472966d0a21eaef27331e9124c185a6b196478b63f6e03a17fe00f64918",
+            "page_sha256": "f7d0e104123cd4b72fa841ace514bafe6fdeaca675d726c916d60a93c49c22c8",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0009.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 10,
+            "anchor": "page:10",
+            "text": "� � \n� \n� � \nMassachusetts Institute of Technology \nDepartment of Electrical Engineering & Computer Science \n6.041/6.431: Probabilistic Systems Analysis \n(g) (5 points) Alice tries another experimen t with her coin.\t Let A be the event that the second \nhead she sees occurs on the 7th coin toss, and let S be the position of the ﬁrst head. Find the \nconditional PMF of S given the event A, pS|A(s). \nSolution: The probability of event  A can be found by choosing one of the ﬁrst 6 outcomes to be \na head, the others tails, and then the outcome  of the 7th toss to be head, which is 6 (1 − p)5p2 ,1 \nwhere p = 3 . The intersection of S = s with event A, P (S = s ∩ A), is an event with probabilit y 4 \n(1 − p)5p2 for all values of s (s = 1,..., 6). Consequently, pS|A(s) = P (S=s∩A) is a uniform P (A) \ndistribution over the range of s (s = 1,..., 6). \npS|A(s) =\t 6\n1 s = 1,..., 6 \n0 o.w. \n(h) (5 points) Alice’s friend Bob b uys a coin from the same store that turns out to be fair, i.e., that \non any toss comes up heads with probability 1/2. He tosses the coin repeatedly until he has seen \neither a total of 11 heads or a total of 11 tails. Let U be the number of times he will need to toss \nthe coin. Find the PMF of U, pU (u). (Assume independent tosses.) \nSolution: Bob must toss a coin at least  11 times and at most 21 times in order to have either 11 \nheads or 11 tails. The intersection of Bob requiring u tosses and 11 of those tosses being heads, \nis the sum of probability the u−1 sequences that conclude with a head and have a total of 11 10\t � �\nheads. The probability of each of  those sequences is 21 u . If we consider any sequence in Bob’s \nexperiment with u tosses, since the coin is  fair, that sequence is equally likely to have 11 heads \nand u − 11 tails or 11 tails and u  − 11  heads. Consequently, the intersection of  Bob requiring u \ntosses and 11 of those tosses being tails  is identical to the probability that the sequence had 11 \nheads. Summing these two mutually exclusiv e probabilities which total pU (u): \n� � �� �u−1 1 u \npU (u) = 2 10 2 u = 11,..., 21 0 o.w. \n(Quiz 1 Solutions| Spring 2009)\n10",
+            "text_sha256": "6c8839b5b948ae491f9e8cd082795f85d87c7054d0c1d765b87b6cbdadacdf1f",
+            "page_sha256": "b793e25c5bab2a0eb378bd60e777cca52845bd9cc875bb01e27b385786c28891",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0010.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 11,
+            "anchor": "page:11",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "2839df940729aafc6cc6e53888db0a194ec611a9e0683b02a31cc9f70fc71aa7",
+            "raster_path": ".local/extracted/6fc2c5427a92e548-28a184186caab0ea19c978d30de9c757009c4b5d91175b8f5b72ee76ca1458ce/page-0011.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/ce9cf1921235ff105c2f08ba70ccd487_MIT6_041SCF13_qu01_s09_sol.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:24.163053+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC train-solution",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    },
+    {
+      "id": "lecture-1",
+      "path": "train/lecture-1.pdf",
+      "role": "slides",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "d9538a403bd0390f54f3f1c6edec12a49777821facb459f1e6004744fe5498b0",
+        "size_bytes": 613739,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 4,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "LECTURE 1 Sample space Ω \n• Readings: Sections 1.1, 1.2 • “List” (set) of possible outcomes \n• List must be: \nLecture outline – Mutually exclusive \n• Probability as a mathematical framework for: – Collectively exhaustive \n– reasoning about uncertainty • Art: to be at the “right” granularity \n– developing approaches to inference problems \n• Probabilistic models \n– sample space  \n– probability l aw \n• Axioms of  probability \n• Simple e xamples \nSample space: Discrete example \n• Two rolls of a tetrahedral die \n– Sample space vs. sequential description \nX = First roll \n4 \n3 \n2 \nY = Second \nroll \n1 \n1 \n2 \n3 \n4 \n1,1\n1,2 \n1,3\n1,4 \n4,4 \n1 2 3 4 \nSample space: Continuous example \nΩ = {(x, y) | 0 ≤ x, y ≤ 1} \nx \n1 \n1 \ny \n1",
+            "text_sha256": "96ee4202372770e0b0ef6c9a73e5e39c43111e682040c2503f14a7748f24f12a",
+            "page_sha256": "ac2d768af74be98b4c3d90d9e6953d717fc0c6bcf52843ae375bc13c02778ad8",
+            "raster_path": ".local/extracted/f92ad23a5abc0343-d9538a403bd0390f54f3f1c6edec12a49777821facb459f1e6004744fe5498b0/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "Probability axioms Probability law: Example with ﬁnite sample \nspace \n• Event: a subset of the sample space \n4• Probability is assigned to events \n3Y = Second \nroll \n2Axioms: \n11. Nonnegativity: P(A) ≥ 0 \n4 \n2. Normalization: P(Ω)=1 \n3. Additivity: If A ∩ B  = Ø, then P(A ∪ B)= P(A)+ \n• Let every possible outcome have probability 1/16P(B) \n– P((X, Y ) is (1,1) or (1,2)) = \n• P({s1,s 2,..., sk})= P({s1})+ ··· + P({sk}) – P({X =1 })= \n= P(s1)+ ··· + P(sk) \n– P(X + Y is odd) = \n– P(min(X, Y ) = 2) = • Axiom 3 needs strengthening \n• Do weird sets  have probabilities? \nDiscrete uniform law Continuous uniform law \n• Let all outcomes be equally likely • Two “random” numbers in [0, 1]. \ny \n• Then, 1 \nnumber of elements of A P(A)= total numbe r of sample points \n• Computing pr obabilities ≡ counting x1 \n• Deﬁnes fair coins, fair dice, well-shuﬄed card decks • Uniform law: Probability = Area \n– P(X + Y ≤ 1/2) = ? \n– P(( X, Y )=( 0 .5, 0.3) ) \n1 2 3 \nX = First roll \n2",
+            "text_sha256": "265e454d512627cfcda31f93f20b9284c32f000d73f8a09bf29f46bb0e9f599c",
+            "page_sha256": "4be76d3aa6056e3eb5cc2b9d1f57027ac19d5d3a9852912bce3a879142a377dc",
+            "raster_path": ".local/extracted/f92ad23a5abc0343-d9538a403bd0390f54f3f1c6edec12a49777821facb459f1e6004744fe5498b0/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "= 13\nProbability law: Ex. w/countably inﬁnite sample \nspace \n•\t Sample space : {1, 2,... } \n–\t We are gi ven P(n)=2 −n , n =1 , 2,... \n–\t Find P(outcome is even) \n1/2 \n….. \np \n1/4 \n1/8 1/16 \n1 2 3 4 \n1 1 1 P({2, 4, 6,... })= P(2) + P(4) + ··· = + + + ··· 22 24 26 \n•\t Countable additi vity axiom (needed for this calcu­\nlation): \nIf A1,A 2,... are disjoint events, then: \nP(A1 ∪ A2 ∪ ··· )= P(A1)+ P(A2)+ ··· \n3",
+            "text_sha256": "cceaeda20a2b83a95c5372665e9465e1b6b83802cbc5db24e41c4267e0579ddf",
+            "page_sha256": "e286f6eb6423c22ac1708c7e549f72694734476add1896f9f465246205ce4f3e",
+            "raster_path": ".local/extracted/f92ad23a5abc0343-d9538a403bd0390f54f3f1c6edec12a49777821facb459f1e6004744fe5498b0/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 4,
+            "anchor": "page:4",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "2839df940729aafc6cc6e53888db0a194ec611a9e0683b02a31cc9f70fc71aa7",
+            "raster_path": ".local/extracted/f92ad23a5abc0343-d9538a403bd0390f54f3f1c6edec12a49777821facb459f1e6004744fe5498b0/page-0004.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/ff296575da32c406c2e56131e1e38997_MIT6_041SCF13_L01.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:24.512117+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC lecture-1",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    },
+    {
+      "id": "lecture-2",
+      "path": "train/lecture-2.pdf",
+      "role": "slides",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "261a03813dbf289eb81dd78ce487fba332958ec5502526a7843df2a2de16ef52",
+        "size_bytes": 235674,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 3,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "LECTURE 2 Review of probability models\n• Readings: Sections olqkolr • Sample space Ω\n– Mutually exclusive\nCollectively exhaustiveLecture outline\n– Right granularity\n• Review • Eventx Subset of the sample space\n• Conditional probability\nAllocation of probabilities to events\n• Three important toolsx\n•\nol PfAg ≥ n\n– Multiplication rule pl PfΩg=o\nql If– T otal probability theorem A ∩ B = Øj\nthen PfA ∪ Bg= PfAgi PfBg\n– Bayes’ rule\nq’l If Ao,A p,... are disjoint eventsj thenx\nPfAo ∪ Ap ∪ ··· g= PfAogi PfApgi ···\n• Problem solvingx\n– Specify sample space\n– Deﬁne probability law\n– Identify event of interest\n– Calculatelll\nConditional probability Die roll example\n4A\n3Y = Second B         roll\n2\n1\n• PfA | Bg = probability of Aj\nthat B occurred 1 2 3given 4\nis our new universe X– B  = First roll\n• Deﬁnition: Assuming PfBg = nj • Let B be the eventx minfX, Y g=p\nPfAPfA B g= ∩ Bg| • Let M = maxfX, Y gPfBg\nPfA | Bg undeﬁned if PfBg=n • PfM =o| Bg=\n• PfM =p| Bg=\n⁄\n1",
+            "text_sha256": "625b1718fb6ad55643b2ee4e7f48a3d9b5b278fb8af66c890b614b58303d1ef7",
+            "page_sha256": "6cf06f0143509974a07867662510ae6ac8701a0104a59c9ac6a05d41d5cfcd5b",
+            "raster_path": ".local/extracted/ea381c7a2e867787-261a03813dbf289eb81dd78ce487fba332958ec5502526a7843df2a2de16ef52/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "Models based on conditional Multiplication rule\nprobabilities\nPfA B C g= PfAg PfB Ag PfC A B g\n• Event Ax Airplane is ﬂying above\n∩ ∩ · | · | ∩\nEvent Bx Something registers on radar\nscreen\nA UB P(C | A U   B)P(B | A)=0.99 A UB UC\nP(B | A)cP(B  | A)=0.01\nP(A)=0.05 A\ncP(B  | A)\ncA UB UCP(A)\nA\nU cBcP(A )=0.95\ncA U cB UCcP(B | A )=0.10\nc cP(B  | A )=0.90 cP(A )\ncA\nPfA ∩ Bg=\nPfBg=\nPfA | Bg=\nT otal probability theorem Bayes’ rule\n• Divide and conquer • “Prior” probabilities PfAig\n– initial “beliefs”\n• Partition of sample space into Ao,A p,A q\n• We know PfB | Aig for each i• Have PfB | Aigj for every i • Wish to compute PfAi | Bg\nA – revise “beliefs”j given that B occurred1\nB\nA1\nB\nA A2 3\n• One way of computing APf ABgx 2 3\nPfBg= PfAogPfB | Aog\ni PfApgPfB | Apg\nPfi f g f | g Ai ∩ BgP Aq P B A q PfAi | Bg = PfBg\nPfAigPfB= | AigPfBg\nPfA gPfB A g= ∑ i | i\nj PfAjgPfB | Ajg\n      \nMultiplication rule\nP(A ∩ B ∩ C) = P(A)P(B | A)P(C | A ∩ B)\n2",
+            "text_sha256": "a2e7ed2fb6967df905640bbf83bb944e1cfeebb55845ff0460f1a88a4f9ce65e",
+            "page_sha256": "f230f4be7b935eb507c859a1970478e65b8345241190762925f089f69a18be6e",
+            "raster_path": ".local/extracted/ea381c7a2e867787-261a03813dbf289eb81dd78ce487fba332958ec5502526a7843df2a2de16ef52/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "aa6b4d776b857ebabaf1fd2a9316f0df99f05227a9f9a7db84814c9a00606191",
+            "raster_path": ".local/extracted/ea381c7a2e867787-261a03813dbf289eb81dd78ce487fba332958ec5502526a7843df2a2de16ef52/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/a1462fa23de9d08c0dfd233a57278fed_MIT6_041SCF13_L02.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:25.030253+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC lecture-2",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    },
+    {
+      "id": "lecture-3",
+      "path": "train/lecture-3.pdf",
+      "role": "slides",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "2ac46c0ef60bc554acfce65eaf5a43e0b784f0288774aff62112125ef5ff7c0a",
+        "size_bytes": 175559,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 3,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "LECTURE 3 Models based on conditional\nprobabilities\n• Readings: Section qnu\n• s tosses of a biased coin:\n• Review PgHh= pl PgT h=q − p\n• Independence of two events p HHH\n• Independence of a collection of events p HHT1 - p\np HTH\nReview p 1 - p\n1 - p HTT\nPgA ∩ Bh h p pPgA | Bh= , assuming PgB > THH\nPgBh 1 - p p\n1 - p THT\n• Multiplication rule: p TTH\n1 - p\nPgA ∩ Bh= PgBh · PgA | Bh= PgAh · PgB | Ah 1 - p TTT\n• T otal probability theorem:\nPg h= Pg h Pg | hk Pg chPg | c PgT HT h=B A B A A B A h\n• Bayes rule: Pgq headh =\nPgAihPgB A ihPgAi | Bh= |PgBh Pgﬁrst toss is H | q headh =\nIndependence of two events Conditioning may a ﬀect independence\n• “Defn:” PgB | Ah= PgBh • Conditional independencel given Cl\nis deﬁned as independence– “occurrence of A\nunder probability law Pgprovides no information ·| Ch\nabout B’s occurrence”\n• Assume A and B are independent\n• Recall that PgA ∩ Bh= PgAh · PgB | Ah\n• Defn: PgA ∩ Bh= PgAh · PgBh CA\n• Symmetric with respect to A and B\nB– applies even if PgAh=p\n– implies PgA | Bh= PgAh • If we are told that C occurredl\nare A and B independent?\n1",
+            "text_sha256": "d781a7288dae7949d940d073b8870aed9d8b8f3e97db5298112eea00eeb3e3fc",
+            "page_sha256": "ad4bbbd3025c1e3ece06d8b5183eb0914dcc61616228585e6f885f24ccf55599",
+            "raster_path": ".local/extracted/59d45693bb4bc74b-2ac46c0ef60bc554acfce65eaf5a43e0b784f0288774aff62112125ef5ff7c0a/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "Conditioning may a ﬀect independence Independence of a collection of events\n• Two unfair coinsl A and B: • Intuitive deﬁnition:\nPgH | coin Ah=p .9l PgH | coin Bh=p .q Information on some of the events tellschoose either coin with equal probability us nothing about probabilities related to\n0.9 the remaining events\n0.10.9 – Engn:\nCoin A\nPg ∩ g c ∪ h | ∩ c h= Pg ∩ g c0.9 Aq Ar As Au Av Aq Ar ∪ Ashh\n0.5 0.1 0.1\n• Mathematical deﬁnition:\n0.1 Events Aq,A r, . . . , An0.5 0.1\n0.9 are called independent if:\nCoin B 0.1\n0.9 PgAi∩Aj∩··· ∩Aqh= PgAihPgAjh ··· PgAqh\n0.9 for any distinct indices i, j, . . . , ql\ngchosen from {q, . . . , n h\n• Once we know it is coin Al are tosses\n}\nindependent?\n• If we do not know which coin it isl are\ntosses independent?\n– Compare:\nPgtoss qq = Hh\nPgtoss qq = H | ﬁrst qp tosses are headsh\nIndependence vs. pairwise The king’s sibling\nindependence\n• The king comes from a family of two\n• Two independent fair coin tosses childrenn What is the probability that\n– A: First toss is H his sibling is female?\n– B: Second toss is H\n– PgAh= PgBh=q /r\nHH HT\nTH TT\n– C: First and second toss give same\nresult\n– PgCh=\n– PgC ∩ Ah=\n– PgA ∩ B ∩ Ch=\n– PgC | A ∩ Bh=\n• Pairwise independence does not\nimply independence\n2",
+            "text_sha256": "7ae18b6d45433bea0324189e3a638390d312974abfc797f817ae15ebee625a02",
+            "page_sha256": "a119721f5d12f4518bd07b7bd7a6b914320e0f7be9e7d6366a4e011e6abe4e15",
+            "raster_path": ".local/extracted/59d45693bb4bc74b-2ac46c0ef60bc554acfce65eaf5a43e0b784f0288774aff62112125ef5ff7c0a/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "aa6b4d776b857ebabaf1fd2a9316f0df99f05227a9f9a7db84814c9a00606191",
+            "raster_path": ".local/extracted/59d45693bb4bc74b-2ac46c0ef60bc554acfce65eaf5a43e0b784f0288774aff62112125ef5ff7c0a/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/a2015627268f4846eb3b1368623ce46f_MIT6_041SCF13_L03.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:25.507289+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC lecture-3",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    },
+    {
+      "id": "lecture-4",
+      "path": "train/lecture-4.pdf",
+      "role": "slides",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "512a15facda793bb10ac54b55f7ad0c15b1a3dbf6ac2f0e89d8b458f1ab5737f",
+        "size_bytes": 158682,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 3,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "LECTURE 4 Discrete uniform law\n• Readings: Section mir • Let all sample points be equally likely\n• Theng\nLecture outline number of elements of A APcAdy y | |total number of sample points Ω• Principles of counting | |\n• Just count...• Many examples\n– permutations\n– khpermutations\n– combinations\n– partitions\n• Binomial probabilities\nBasic counting principle Example\n• r stages • Probability that six rolls of a sixhsided die\n• ni choices at stage i all give diﬀerent numbers?\n– Number of outcomes that\nmake the event happenv\n– Number of elements\nin the sample spacev\n• Number of choices isv nmnn ···n r\n– Answerv\n• Number of license plates\nwith o letters and p digits y\n• ... if repetition is prohibited y\n• Permutations: Number of ways\nof ordering n elements isv\n• Number of subsets of {m,...,n } y\n1",
+            "text_sha256": "0b563b0d1944b76a334df3f58bf07a757c8d80ab4b4e8fbbdbb70d7a1f9f633d",
+            "page_sha256": "08b14244fe44c8e6327e3cbff3444f4a4a4e8731ac2ebea9d45e23d26ac9034b",
+            "raster_path": ".local/extracted/774aa6200d004867-512a15facda793bb10ac54b55f7ad0c15b1a3dbf6ac2f0e89d8b458f1ab5737f/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "Combinations Binomial probabilities\n•\n￿n￿\nv number of khelement subsetsk • n independent coin tosses\nof a given nhelement set – PcHdyp\n• Two ways of constructing an ordered\nsequence of k distinct itemsv\nPcHTTHHHdy\n– Choose the k items one at a timev\n•\nnOncn−md ···cn −kfmd y choicesc − dO • csequenced y S heads cm − dSt a i l sn k P p p\n– Choose k itemsg then order them\nckO possible ordersd\nPck headsd y\n￿\nPcseq.d\n• Hencev\n￿\nk− ad seq.\nn￿\nhe\nnO· kOyk cn − kdO y cS of k−head seqs d kp cm − kpdn. · −\n￿n\nk\n￿ nOy y kcm dn−kpkOcn − kdO ￿nk￿p −\nk\n￿n\ny\nyl\n￿n\nk\n￿\nCoin tossing problem Partitions\n• event Bv o out of ml tosses were “heads”i • qnhcard deckg dealt to p players\n– Given that B occurredg • Find Pceach gets an aced\nwhat is the cconditionald probability\n• Outcomev a partition of the qn cardsthat the ﬁrst n tosses were heads?\n– number of outcomesv\n• All outcomes in set B are equally likelyv qnOprobability op cm − pds\nmoO moO moO moO\n– Conditional probability law is uniform • Count number of ways of distributing the\nfour acesv p o n\n• Number of outcomes in Bv\n· ·\n• Count number of ways of dealing the\n• Out of the outcomes in Bg remaining pt cards\nhow many start with HH? ptO\nmnO mnO mnO mnO\n• Answerv\nptOp · o · nmnO mnO mnO mnO\nqnO\nmoO moO moO moO\n2",
+            "text_sha256": "5b7cb9409c9f46d137f86a14af6435b0638556f5f7326fcfd412371fe4787938",
+            "page_sha256": "1bc3dd04a275e42e55bb58c7370fde400a1a699aa124838362d9538466ffd1c4",
+            "raster_path": ".local/extracted/774aa6200d004867-512a15facda793bb10ac54b55f7ad0c15b1a3dbf6ac2f0e89d8b458f1ab5737f/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "aa6b4d776b857ebabaf1fd2a9316f0df99f05227a9f9a7db84814c9a00606191",
+            "raster_path": ".local/extracted/774aa6200d004867-512a15facda793bb10ac54b55f7ad0c15b1a3dbf6ac2f0e89d8b458f1ab5737f/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/17ea1d60167279b01569bc6dcd030966_MIT6_041SCF13_L04.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:25.971577+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC lecture-4",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    },
+    {
+      "id": "lecture-5",
+      "path": "train/lecture-5.pdf",
+      "role": "slides",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "c7a75287b315b88c7047b447d71bf5fe8e2ddfe721fe89dd2f56e04aefcac54d",
+        "size_bytes": 183824,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 3,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "LECTURE 5 Random variables\n• Readings: Sections qmplqmri start qms • An assignment of a value enumberf to\nevery possible outcome\nLecture outline\n• Mathematicallyy A function\n• Random variables from the sample space Ω to the real\nnumbers\n• Probability mass function ePMFf\n– discrete or continuous values\n• Expectation\n• Can have several random variables• Variance deﬁned on the same sample space\n• Notationy\n– random variable X\n– numerical value x\nProbability mass function (PMF) How to compute a PMF pX exf\n– collect all possible outcomes for which\n• e“probability law”i X is equal to x\n“probability distribution” of Xf – add their probabilities\n– repeat for all x\n• Notationy\n• Example: Two independent rools of a\npX exf = PeX = xf fair tetrahedral die\n= Pe{ω ∈ Ω s.t.X eωf= x}f\nF y outcome of ﬁrst throw\n∑ Sy outcome of second throw• pX exf ≥ o x pX exf=p X = mineF, S f\n• Example: X=number of coin tosses\nuntil ﬁrst head 4\n– assume independent tossesi 3\nPeHf= p>o S = Second roll\n2\npX ekf = PeX = kf\n= PeTT ··· TH f 1\n= ep − pfk−pp, k =p , q,... 12 3 4\nF = First roll\n– geometric PMF\npX eqf =\n1",
+            "text_sha256": "033f56f09d0e04c4032194794df9d7a136aeb05831bfcee6cc9689233a73f533",
+            "page_sha256": "a7cd15a25fb353764a46755fa63b734d29817398725364fdbff4ac52ebfd078a",
+            "raster_path": ".local/extracted/abb168b4a3016920-c7a75287b315b88c7047b447d71bf5fe8e2ddfe721fe89dd2f56e04aefcac54d/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "Binomial PMF Expectation\n• Xy number of heads in n independent • Deﬁnitiony\ncoin tosses E[X]=\n∑\nxpX exf\nx\n• PeHf= p\n• Interpretationsy\n• Let n =s – Center of gravity of PMF\n– Average in large number of repetitionspX eqf = PeHHT T fh PeHT HT fh PeHT T Hf of the experiment\nhPeT HHT fh PeT HT Hfh PeT T HHf eto be substantiated later in this coursef\n=u qep − fqp p • Exampley Uniform on o , p, . . . , n\ns= (\nq\n) q − fqp ep p p (x )X\nIn generaly 1/(n+1)\nk fn−kpX ekf= (n)p ep−p ,k =o , p, . . . , n . . .k\n0 1 x n- 1 n\np p pE[X]=o × hp× h··· hn =n hp n hp ×n hp\nProperties of expectations Variance\n• Let X be a rmvm and let Y = geXf Recally E[geXf] = ∑ gexfpX exf\nx\n– Hardy E[Y ]=\n∑\nypY eyf\ny • Second moment: E[ q qX ]= ∑x x p e\n– Easyy E[Y ]=\n∑\nX xf\ngexfpX exf\nx • Variance\n• Cautiony In generali E[geXf] = geE[X]f vareXf= E\n[\neX − E[X]fq]\n=\n∑\ne [ ]f qx E X p X exf\nx\n−\nqerties: If αi β are constantsi theny = E[ qProp X ] − eE[X]f\n• E[α]=\nPropertiesy\n• E[αX]= • vareXf ≥ o\n• E[αX h β]= • vareαX h βf= qα vareXf\n⁄\n2",
+            "text_sha256": "b6767f9deb0e1acef700f520f226d874de7cc9f3319a7649a81611e70c0b7fdb",
+            "page_sha256": "2616e80ac344490c266dfeb5c1e35e1ffcdf784b3b72b17ec7c7c35e492cbe1b",
+            "raster_path": ".local/extracted/abb168b4a3016920-c7a75287b315b88c7047b447d71bf5fe8e2ddfe721fe89dd2f56e04aefcac54d/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "aa6b4d776b857ebabaf1fd2a9316f0df99f05227a9f9a7db84814c9a00606191",
+            "raster_path": ".local/extracted/abb168b4a3016920-c7a75287b315b88c7047b447d71bf5fe8e2ddfe721fe89dd2f56e04aefcac54d/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/e49cdbaf3129125869700c46aa661fa1_MIT6_041SCF13_L05.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:26.481834+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC lecture-5",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    },
+    {
+      "id": "lecture-6",
+      "path": "train/lecture-6.pdf",
+      "role": "slides",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "a2adfd90bc3f9e5ceccef851fd5d8b922b7099b37fa1786fbeb6ba039e0a4dfb",
+        "size_bytes": 169127,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 3,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "LECTURE 6 Review\nRandom variable X: function from• Readings: Sections yu4tyu6 • sample space to the real numbers\nLecture outline • PMF nfor discrete random variableso:\npX nxo= PnX = xo\n• Review: PMFs expectations variance • Expectation:\n• Conditional PMF E[X]= ∑ xpX nxo\nx\n• Geometric PMF\nE[gnXo] = gnxop nxo\n• XT otal expectation theorem\n∑\nx\n• Joint PMF of two random variables E[αX r β]= αE[X]r β\n• E\n[\nX − E[X]\n]\n=\nvarnXo= E\n=\n[\nn yX − E[X]o\nnx E[X]oyp\n]\n=\n∑\nx\n− X nxo\nE[ yX ] − n yE[X]o\nStandard deviation: σX =\n√\nvarnXo\nRandom speed Average speed vs. average time\n• T raverse a yww mile distance at constant • T raverse a yww mile distance at constant\nbut random speed V but random speed V\np  (v ) 1/2 1/2 p  (v ) 1/2 1/2V V\n1 200 v 1 200 v\n• d = ywws T = tnV o = yww /V • time in hours = T = tnV o=\n• E[T ]= E[tnV o] = ∑v tnvopV nvo=• E[V ]=\n• E[TV ] = yww = E[T ] · E[V ]\n• varnV o= • E[yww/V ]= E[T ] = yww/ E[V ]u\n• σV =\n⁄\n⁄\n1",
+            "text_sha256": "5dfa6d5a48f862bc78766535278ea8bcac92c44e1ffb3f0d09318755501513dd",
+            "page_sha256": "72f7c34e94e284d69b19edb71ace6748e68ac2dabf524371c111a441925c23d4",
+            "raster_path": ".local/extracted/4952d4405196211f-a2adfd90bc3f9e5ceccef851fd5d8b922b7099b37fa1786fbeb6ba039e0a4dfb/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "Conditional PMF and expectation Geometric PMF\n• X: number of independent coin tosses• pX|Anxo= PnX = x | Ao until ﬁrst head\n• E[X | A]=\n∑\nxp nxo n o = nx − ok−xX p\nx\n|A pX k p, k =x , y,...\n∞ ∞\np  (x ) E[X]= nx kkp n xX ∑ X ko= p\nk\n∑\nk −\n=x\n− po\nk=x\n• Memoryless property: Given that X> ys1/4 the ruvu X − y has same geometric PMF\np   p (k) p (k)X X |X>2\n2p(1-p) p  1 23 4 x  \n... ...• Let A = {X ≥ y} k1 3 k\np (k)X- 2 |X>2\npX|Anxo=\np   \nE[X | A]=\n...\n1 k\nT otal Expectation theorem Joint PMFs\n• Partition of sample space • pX,Y nx, yo= PnX = x and Y = yo\ninto disjoint events Ax,A y, . . . , An\ny\nA1 4 1/20 2/20 2/20\nB\n3 2/20 4/20 1/20 2/20\n2 1/20 3/20 1/20\nA A 12 3 1/20\nx12 3 4\nPnBo= PnAxoPnB | Axor··· rPnAnoPnB | Ano • pX,Y nx, yo=\npX nxo= PnAxopX A nxor··· rPnAnopX A nxon\n∑\nx\n∑\ny| x |\nE[X]= PnAxoE[X | Ax]r··· rPnAnoE[X | An] • pX nxo=\n∑\npX,Y nx, yo\ny\n• Geometric example: pX,Y nx, yopX Y nx y o= PnX = x Y = yo=Ax : {X =x }s Ay : {X> x •} | | | pY nyo\nE[X]= PnX = xoE[X | X = x] • ∑ pX Y nx | yo=|\nrPnX> xoE[X | X> x] x\n• Solve to get E[X]=x /p\n2",
+            "text_sha256": "51bf6dbe2206d47224e3fab2eeb14410d718c75f5d2c80423e6e90b0b2f05e37",
+            "page_sha256": "057329d04f413dc81e73db31118f8deaaca1a6ebafe55d55d1cd195d8d640d4a",
+            "raster_path": ".local/extracted/4952d4405196211f-a2adfd90bc3f9e5ceccef851fd5d8b922b7099b37fa1786fbeb6ba039e0a4dfb/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "aa6b4d776b857ebabaf1fd2a9316f0df99f05227a9f9a7db84814c9a00606191",
+            "raster_path": ".local/extracted/4952d4405196211f-a2adfd90bc3f9e5ceccef851fd5d8b922b7099b37fa1786fbeb6ba039e0a4dfb/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/9866bcafa1403ea4163ec3c6b31a53c0_MIT6_041SCF13_L06.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:26.726705+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC lecture-6",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    },
+    {
+      "id": "lecture-7",
+      "path": "train/lecture-7.pdf",
+      "role": "slides",
+      "split": "train",
+      "status": "validated",
+      "metadata": {
+        "sha256": "03f0d791603a0a95d26de4f99840863cbd0b8dab2d351d7f65c36419accedaad",
+        "size_bytes": 141674,
+        "parser": {
+          "name": "pypdf+pypdfium2",
+          "version": "pypdf=6.21.2;pypdfium2=5.14.0"
+        },
+        "page_count": 3,
+        "page_unit": "pdf_page",
+        "pages": [
+          {
+            "page_number": 1,
+            "anchor": "page:1",
+            "text": "LECTURE 7 Review\n• Readings: Finish Chapter x\npX mxn= PmX = xn\nLecture outline\npX,Y mx, yn= PmX = x, Y = yn\n• Multiple random variables\np n– Joint PMF X Y mx | yn= PmX = x Y = y| |\n– Conditioning\n– Independence pX mxn=\n• More on expectations\n∑\npX,Y mx, yn\ny\n• Binomial distribution revisited pX,Y mx, yn= pX mxnpY X my x| | n\n• A hat problem\nIndependent random variables Expectations\npX,Y,Z mx, y, zn= pX mxnpY X my | xnpZ X,Y mz | x, yn [| | E X]=\n∑\nxpX mxn\nx\nE[gmX, Y n] = gmx, ynpX,Y mx, yn• Random variables Xr Y r Z are x y\nindependent if:\n∑ ∑\npX,Y,Z mx, y, zn= pX mxn · pY myn · pZ mzn • In general: E[gmX, Y n] = g E[X], E[Y ]\nfor all x, y, z\n( )\ny • E[αX p β]= αE[X]p β\n4 1/20 2/20 2/20 • E[X p Y p Z]= E[X]p E[Y ]p E[Z]\n3 2/20 4/20 1/20 2/20\n2 1/20 3/20 1/20 • If Xr Y are independent:\n1 1/20\n– E[XY ]= E[X]E[Y ]\nx12 3 4\n– E[gmXnhmY n] = E[gmXn]\n• Independent?\n· E[hmY n]\n• What if we condition on X ≤ x\nand Y ≥ y?\n⁄\n1",
+            "text_sha256": "7bd8449ea9a0a65b8fd03e88b1344d5937dc4e56642f919b47bd35621f971373",
+            "page_sha256": "10a3bd993397c4e337f3cf4093d7a2ca389670f47b7b59fb01a58b3f35fe84b1",
+            "raster_path": ".local/extracted/185ecf7098137f9b-03f0d791603a0a95d26de4f99840863cbd0b8dab2d351d7f65c36419accedaad/page-0001.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 2,
+            "anchor": "page:2",
+            "text": "Variances Binomial mean and variance\n• VarmaXn= xa VarmXn • X = g of successes in n independent\ntrials\n• VarmX p an = Varm Xn\n– probability of success p\nn n• Let Z = X p Y t kE[X]= ∑ k( ) p mw − n kpn −\nkIf Xr Y are independent: k=v\nVarmX p Y n = Varm Xn p VarmY n w, if success in trial i,• Xi = v, otherwise\n• Examples:\nE[Xi]=\n– If X = Y r Varm X p Y n=\n•\n– If X = −Y r Varm X p Y n= • E[X]=\n– If Xr Y indeptr and Z = X − yY r\naVa m Zn= • V rm Xr in=\n• VarmXn=\nThe hat problem Variance in the hat problem\n• n people throw their hats in a box and • Varm n= [ x xX E X ] − mE[X]n = xE[X ] − w\nthen pick one at randomt\n– X: number of people who get their own\nhat xX = ∑ xXi p\ni i,j\n∑\nXiXj\n:i=j\n– Find E[X]\n• xE[X ]=i\n,\ni =\n\n\nw if i selects own hatX v, otherwiset\nPmXwXx = wn = PmXw = wn·PmXx =w| Xw = wn\n• X = p\n\nXw Xx p ··· p Xn =\n• PmXi = wn =\n• E[Xi]=\n• Are the Xi independent? • E[ xX ]=\n• E[X]= • VarmXn=\n⁄\n2",
+            "text_sha256": "992dfe3f4889f99237c11abd04e20023cf7d0a685d6002e0d5408bbc0cc9827d",
+            "page_sha256": "8de7fa78a418d2ab7829e79730823f5ef98dfe22984dde66da30f5e6978a9cc4",
+            "raster_path": ".local/extracted/185ecf7098137f9b-03f0d791603a0a95d26de4f99840863cbd0b8dab2d351d7f65c36419accedaad/page-0002.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed",
+              "Formula notation requires fidelity review"
+            ],
+            "duplicate_of": null
+          },
+          {
+            "page_number": 3,
+            "anchor": "page:3",
+            "text": "MIT OpenCourseWare\nhttp://ocw.mit.edu\n6.041SC Probabilistic Systems Analysis and Applied Probability\nFall 2013\nFor information about citing these materials or our Terms of Use, visit: http://ocw.mit.edu/terms.",
+            "text_sha256": "077ed10b0b20f2c175fe7461a1d0924ef568103b8da408278aced86fceb64762",
+            "page_sha256": "aa6b4d776b857ebabaf1fd2a9316f0df99f05227a9f9a7db84814c9a00606191",
+            "raster_path": ".local/extracted/185ecf7098137f9b-03f0d791603a0a95d26de4f99840863cbd0b8dab2d351d7f65c36419accedaad/page-0003.png",
+            "quality": "needs_review",
+            "review_reasons": [
+              "Full-page visual review required for math, figures and reading order; no image OCR performed"
+            ],
+            "duplicate_of": null
+          }
+        ]
+      },
+      "provenance": {
+        "origin": "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/c0a406b218730ddb16326d695a895c57_MIT6_041SCF13_L07.pdf",
+        "license": "CC-BY-NC-SA-4.0",
+        "acquired_at": "2026-10-21T18:26:26.985037+00:00",
+        "citation": "MIT OpenCourseWare / John Tsitsiklis: MIT 6.041SC lecture-7",
+        "notes": "Downloaded file identity pinned in downloads.json; semantic fidelity remains review-required."
+      }
+    }
+  ]
+}

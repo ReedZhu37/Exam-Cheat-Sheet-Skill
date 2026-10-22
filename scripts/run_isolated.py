@@ -24,6 +24,14 @@ AGENT = {
 MODEL = 'openai/gpt-6-astra#high'
 
 
+def reserve_attempt(out: Path) -> None:
+    """Claim a new attempt before any controller writes its prompt."""
+    try:
+        out.mkdir(parents=True, exist_ok=False)
+    except FileExistsError as exc:
+        raise ValueError('Refusing to overwrite an existing attempt; use a new explicitly named directory') from exc
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--prompt', type=Path, required=True)
@@ -31,7 +39,13 @@ def main():
     p.add_argument('--out', type=Path, required=True)
     p.add_argument('--runtime', type=Path, default=Path('.local/runtime'))
     args = p.parse_args()
+    allowed = {args.prompt.resolve()} if args.prompt.name == 'prompt.md' and args.prompt.parent.resolve() == args.out.resolve() else set()
+    if args.out.exists() and (not args.out.is_dir() or any(p.name != 'prompt.md' or p.resolve() not in allowed for p in args.out.iterdir())):
+        raise ValueError('Refusing to overwrite an existing run; only the new controller prompt is permitted')
     args.out.mkdir(parents=True, exist_ok=True)
+    # Exclusive creation prevents simultaneous runners from claiming one attempt.
+    with (args.out / 'run.json').open('x', encoding='utf-8') as claim:
+        json.dump({'status': 'starting'}, claim)
     args.runtime.mkdir(parents=True, exist_ok=True)
     config = args.runtime / 'opencode.json'
     config.write_text(json.dumps(AGENT, indent=2) + '\n', encoding='utf-8')
@@ -50,6 +64,7 @@ def main():
         'agent_config_sha256': hashlib.sha256(config.read_bytes()).hexdigest(),
         'inputs': [{'name': f.name, 'sha256': hashlib.sha256(f.read_bytes()).hexdigest(), 'bytes': f.stat().st_size} for f in files],
         'output_budget': 'prompt maximum 8000 words; provider default hard token limit',
+        'timeout_seconds': 1800,
     }
     (args.out / 'run.json').write_text(json.dumps(record, indent=2), encoding='utf-8')
     with (args.out / 'events.jsonl').open('w', encoding='utf-8') as stdout, (args.out / 'stderr.txt').open('w', encoding='utf-8') as stderr:
@@ -78,13 +93,29 @@ def main():
             (args.out / 'session.json').write_text(meta.stdout, encoding='utf-8')
         messages = subprocess.run([exe, 'api', 'get', f'/api/session/{sid}/message'], capture_output=True, text=True, encoding='utf-8', timeout=30)
         if messages.returncode == 0:
-            (args.out / 'messages.json').write_text(messages.stdout, encoding='utf-8')
             payload = json.loads(messages.stdout)
             records = payload.get('data', [])
             record['actual_models'] = [m.get('model') for m in records if m.get('type') == 'assistant']
-    (args.out / 'run.json').write_text(json.dumps(record, indent=2), encoding='utf-8')
+            record['usage'] = [m.get('tokens') for m in records if m.get('type') == 'assistant']
+            record['delivered_images'] = [f.get('name') for m in records if m.get('type') == 'user' for f in m.get('files', []) if f.get('mime', '').startswith('image/')]
+            record['finish_reasons'] = [m.get('finish') for m in records if m.get('type') == 'assistant']
+            # Do not publish provider reasoning traces or duplicate binary payloads.
+            record['message_types'] = [m.get('type') for m in records]
+    expected_images = sum(f.suffix.lower() in {'.png', '.jpg', '.jpeg', '.webp'} for f in files)
+    problems = []
     if result.returncode or not any(texts):
-        raise RuntimeError(f'Run failed or produced no response; inspect {args.out}')
+        problems.append('run failed or empty response')
+    if len(record.get('delivered_images', [])) != expected_images:
+        problems.append('attachment delivery mismatch')
+    if record['tool_events'] or not record.get('actual_models') or any(m != {'id': 'gpt-6-astra', 'providerID': 'openai', 'variant': 'high'} for m in record['actual_models']):
+        problems.append('model or tool-isolation mismatch')
+    if any(reason not in {'stop', 'end_turn'} for reason in record.get('finish_reasons', [])):
+        problems.append('generation did not finish normally')
+    record['valid'] = not problems
+    record['validation_errors'] = problems
+    (args.out / 'run.json').write_text(json.dumps(record, indent=2), encoding='utf-8')
+    if problems:
+        raise RuntimeError(f'Invalid run: {problems}; inspect {args.out}')
     print(f'Completed {args.out}; response={record["output_sha256"]}')
 
 

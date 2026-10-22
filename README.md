@@ -57,6 +57,8 @@ uv run python -m exam_cheat_sheet render output/cheatsheet.md --out output/cheat
 | 最终测试 | Fall 2010 Quiz 1：105 分，11 个子题 |
 
 - [课程示例](examples/mit-6041/)
+- [第二版速查表](examples/mit-6041/v2/cheatsheet.md) · [6 页 PDF](examples/mit-6041/v2/cheatsheet.pdf)
+- [复习指南](examples/mit-6041/v2/review-guide.md) · [开发集修订记录](examples/mit-6041/revision-log.md)
 - [预注册方案](benchmarks/mit-6041-quiz1/protocol.md)
 - [下载清单与哈希](benchmarks/mit-6041-quiz1/downloads.json)
 
@@ -74,7 +76,7 @@ uv run python -m exam_cheat_sheet compile examples/mit-6041/concepts-v1.json --o
 ## 测试与边界
 
 ```sh
-uv run pytest -q
+uv run pytest -q --basetemp .local/pytest
 ```
 
 支持 PDF、PPTX、DOCX、Markdown、纯文本。未承诺 OCR、手写识别、旧版 `.doc/.ppt`、
@@ -83,7 +85,7 @@ uv run pytest -q
 
 ## 文档与许可
 
-- [架构](docs/architecture.md) · [许可边界](docs/licensing.md)
+- [架构](docs/architecture.md) · [命令与 JSON 格式](docs/cli.md) · [许可边界](docs/licensing.md)
 - [第三方说明](THIRD_PARTY_NOTICES.md) · [课程内容署名](examples/mit-6041/ATTRIBUTION.md)
 
 原创代码与通用 Skill：MIT。MIT OCW 原始材料及派生课程示例：

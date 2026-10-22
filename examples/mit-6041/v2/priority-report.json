@@ -1,0 +1,383 @@
+{
+  "title": "MIT 6.041 Quiz 1: probability and discrete random variables (v2; study reference)",
+  "budget_words": 3000,
+  "actual_words": 2862,
+  "over_budget_words": 0,
+  "budget_met": true,
+  "word_count_method": "Whitespace tokens, with each CJK character counted separately",
+  "missing_scope": [],
+  "warnings": [
+    "Small historical sample: 1 unique exams; frequency is descriptive, not a prediction."
+  ],
+  "source_issues": [
+    {
+      "source_id": "lecture-6",
+      "extraction_status": "needs_review",
+      "issue": "Source extraction has not been verified; human review remains outstanding."
+    },
+    {
+      "source_id": "lecture-7",
+      "extraction_status": "needs_review",
+      "issue": "Source extraction has not been verified; human review remains outstanding."
+    },
+    {
+      "source_id": "review",
+      "extraction_status": "needs_review",
+      "issue": "Source extraction has not been verified; human review remains outstanding."
+    },
+    {
+      "source_id": "train-exam",
+      "extraction_status": "needs_review",
+      "issue": "Source extraction has not been verified; human review remains outstanding."
+    },
+    {
+      "source_id": "train-solution",
+      "extraction_status": "needs_review",
+      "issue": "Source extraction has not been verified; human review remains outstanding."
+    }
+  ],
+  "historical_exam_ids": [
+    "S2009"
+  ],
+  "historical_exam_count": 1,
+  "ranking_policy": "Protect scope and prerequisite closure; then A/B/C, unique exam count, allocated points, emphasis, ID. No appearance probabilities.",
+  "evidence_bands": {
+    "A": "Observed in a historical exam",
+    "B": "Teaching or explicit emphasis evidence",
+    "C": "Scope-only or no exam/teaching evidence",
+    "out": "Explicitly out of scope"
+  },
+  "concepts": [
+    {
+      "concept_id": "binomial",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 118,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "conditional-expectation",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 99,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "conditional-independence",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 100,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "conditional-laws",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 130,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "conditioning",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 99,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "counting",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 159,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "event-algebra",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 125,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "event-independence",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 141,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "expectation",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 134,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "geometric",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 151,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "joint-marginal",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 107,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "probability-trees",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 98,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "rv-independence",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 141,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "stopping-counts",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 133,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "total-expectation",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 101,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "total-probability",
+      "evidence_band": "A",
+      "exam_ids": [
+        "S2009"
+      ],
+      "exam_frequency": 1,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 102,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "bernoulli-indicators",
+      "evidence_band": "B",
+      "exam_ids": [],
+      "exam_frequency": 0,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 154,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "bayes",
+      "evidence_band": "C",
+      "exam_ids": [],
+      "exam_frequency": 0,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 107,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "discrete-uniform",
+      "evidence_band": "C",
+      "exam_ids": [],
+      "exam_frequency": 0,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 88,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "pmf-cdf",
+      "evidence_band": "C",
+      "exam_ids": [],
+      "exam_frequency": 0,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 142,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "probability-model",
+      "evidence_band": "C",
+      "exam_ids": [],
+      "exam_frequency": 0,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 133,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "transformed-variables",
+      "evidence_band": "C",
+      "exam_ids": [],
+      "exam_frequency": 0,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 157,
+      "confidence": "high"
+    },
+    {
+      "concept_id": "variance",
+      "evidence_band": "C",
+      "exam_ids": [],
+      "exam_frequency": 0,
+      "allocated_points": 0,
+      "emphasis_count": 0,
+      "selected": true,
+      "protected": true,
+      "reason": "scope",
+      "compact_words": 109,
+      "confidence": "high"
+    }
+  ]
+}

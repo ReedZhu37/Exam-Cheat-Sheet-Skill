@@ -1,0 +1,94 @@
+{
+  "benchmark": "mit-6041-dev",
+  "group": "B",
+  "allow_partial": false,
+  "correct_count": 10,
+  "item_count": 10,
+  "accuracy": 1.0,
+  "weighted_points": 98,
+  "max_points": 98,
+  "weighted_fraction": 1.0,
+  "items": [
+    {
+      "item_id": "B.1",
+      "max_points": 10,
+      "correct": true,
+      "awarded_points": 10,
+      "rationale": "Correct probability pg, justified by P(G ∩ R) = P(G)P(R | G).",
+      "official_anchor": "Official solutions PDF page 1, part 1."
+    },
+    {
+      "item_id": "B.2(a)",
+      "max_points": 10,
+      "correct": true,
+      "awarded_points": 10,
+      "rationale": "Correct binomial probability C(n,k)p^k(1-p)^(n-k), integer support 0 through n, and zero otherwise. The independent-trial and placement arguments are valid.",
+      "official_anchor": "Official solutions PDF page 1, part 2(a)."
+    },
+    {
+      "item_id": "B.2(b)(i)",
+      "max_points": 12,
+      "correct": true,
+      "awarded_points": 12,
+      "rationale": "Correct probability [1+kg+(n-k)h]/(n+1). The three disjoint selection cases correctly account for Caleb's certainly ripe apple and both original varieties.",
+      "official_anchor": "Official solutions PDF page 1, part 2(b)(i)."
+    },
+    {
+      "item_id": "B.2(b)(ii)",
+      "max_points": 12,
+      "correct": true,
+      "awarded_points": 12,
+      "rationale": "Correct conditional probability (1+kg)/[1+kg+(n-k)h]. Both the ripe-gala numerator and conditional-probability division are correct.",
+      "official_anchor": "Official solutions PDF pages 1–2, part 2(b)(ii)."
+    },
+    {
+      "item_id": "B.2(c)",
+      "max_points": 10,
+      "correct": true,
+      "awarded_points": 10,
+      "rationale": "Correct probability 1/C(20,10) = 1/184756. Both the equally likely position-set argument and the alternative conditional-probability calculation are valid.",
+      "official_anchor": "Official solutions PDF page 2, part 2(c)."
+    },
+    {
+      "item_id": "B.3(a)",
+      "max_points": 10,
+      "correct": true,
+      "awarded_points": 10,
+      "rationale": "All three requested results are correct for each tree: PMF g^(x-1)(1-g) on positive integers and zero otherwise, mean 1/(1-g), and variance g/(1-g)^2. The stopping event is correctly identified as the first unripe apple.",
+      "official_anchor": "Official solutions PDF page 2, part 3(a)."
+    },
+    {
+      "item_id": "B.3(b)",
+      "max_points": 12,
+      "correct": true,
+      "awarded_points": 12,
+      "rationale": "Both requested quantities are correct: E[Y2] = 2g/(1-g) and Var(Y2) = 2g/(1-g)^2. Linearity of expectation, independence across trees, and invariance of variance under constant shifts are applied correctly.",
+      "official_anchor": "Official solutions PDF page 3, part 3(b)."
+    },
+    {
+      "item_id": "B.3(c)",
+      "max_points": 12,
+      "correct": true,
+      "awarded_points": 12,
+      "rationale": "Correct joint PMF (1-g)^2 g^y2 for integer pairs 0 ≤ y1 ≤ y2, and zero otherwise. The event transformation and multiplication of independent tree probabilities are valid.",
+      "official_anchor": "Official solutions PDF page 3, part 3(c)."
+    },
+    {
+      "item_id": "B.3(d)(i)",
+      "max_points": 5,
+      "correct": true,
+      "awarded_points": 5,
+      "rationale": "Answers 'No' for 0<g<1, matching the official answer. The separate clarification that independence holds when g=0 is mathematically correct.",
+      "official_anchor": "Official solutions PDF page 3, part 3(d)(i)."
+    },
+    {
+      "item_id": "B.3(d)(ii)",
+      "max_points": 5,
+      "correct": true,
+      "awarded_points": 5,
+      "rationale": "Answers 'Yes', matching the official answer for independence of X2 and Y1. No explanation is required.",
+      "official_anchor": "Official solutions PDF page 3, part 3(d)(ii)."
+    }
+  ],
+  "interpretation": "Descriptive score for the supplied grading records; no improvement or causal claim."
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://exam-cheat-sheet.local/schemas/concept.schema.json",
+  "title": "Authored concept record accepted by the compiler",
+  "type": "object",
+  "required": ["concept_id", "name", "aliases", "definition", "formulas", "prerequisites", "recognition", "procedure", "pitfalls", "sources", "evidence", "scope_status", "confidence"],
+  "properties": {
+    "concept_id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "aliases": {"$ref": "#/$defs/strings"},
+    "definition": {"type": "string", "minLength": 1},
+    "formulas": {"type": "array", "items": {
+      "type": "object", "required": ["expression", "variables", "conditions", "source"],
+      "properties": {
+        "expression": {"type": "string", "minLength": 1},
+        "variables": {"type": "object", "additionalProperties": {"type": "string"}},
+        "conditions": {"type": "string", "minLength": 1},
+        "source": {"$ref": "#/$defs/anchor"}
+      }, "additionalProperties": false
+    }},
+    "prerequisites": {"$ref": "#/$defs/strings"},
+    "recognition": {"oneOf": [{"type": "string"}, {"$ref": "#/$defs/strings"}]},
+    "procedure": {"$ref": "#/$defs/strings"},
+    "pitfalls": {"$ref": "#/$defs/strings"},
+    "sources": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/anchor"}},
+    "evidence": {"type": "array", "items": {
+      "allOf": [{"$ref": "#/$defs/anchor"}],
+      "type": "object", "required": ["kind"],
+      "properties": {
+        "kind": {"enum": ["scope", "exam", "teaching", "emphasis"]},
+        "exam_id": {"type": "string", "minLength": 1},
+        "item_id": {"type": "string", "minLength": 1},
+        "points": {"type": "number", "minimum": 0},
+        "concept_tags": {"$ref": "#/$defs/strings"}
+      }
+    }},
+    "scope_status": {"enum": ["in", "out", "unknown"]},
+    "confidence": {"enum": ["high", "medium", "low"]}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "strings": {"type": "array", "items": {"type": "string"}},
+    "anchor": {
+      "type": "object", "required": ["source_id", "page"],
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1},
+        "page": {"type": "integer", "minimum": 1},
+        "locator": {"type": "string"},
+        "split": {"enum": ["train", "dev", "sealed_test"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "pdf": "examples\\mit-6041\\v1\\cheatsheet.pdf",
+  "actual_pages": 6,
+  "max_pages": 6,
+  "min_font": 9.0,
+  "actual_min_font": 9.0,
+  "fonts": [
+    "ExamUnicode3"
+  ],
+  "page_size_points": [
+    595.2755905511812,
+    841.8897637795277
+  ],
+  "margin_points": 36.0,
+  "bounds_checked": 17860,
+  "bounds_violations": [],
+  "layout_bounds_violations": [],
+  "previews": [
+    "examples\\mit-6041\\v1\\cheatsheet-page-001.png",
+    "examples\\mit-6041\\v1\\cheatsheet-page-002.png",
+    "examples\\mit-6041\\v1\\cheatsheet-page-003.png",
+    "examples\\mit-6041\\v1\\cheatsheet-page-004.png",
+    "examples\\mit-6041\\v1\\cheatsheet-page-005.png",
+    "examples\\mit-6041\\v1\\cheatsheet-page-006.png"
+  ],
+  "line_height_multiplier": 1.25,
+  "page_numbers": true,
+  "heading_keep_content_lines": 2,
+  "formula_mode": "literal plain Unicode; LaTeX is not typeset"
+}

@@ -77,7 +77,7 @@ def main():
         source = {
             'source_id': sid, 'title': f'MIT 6.041SC {sid}', 'author': 'MIT OpenCourseWare / John Tsitsiklis',
             'url': BASE + filename, 'path': relative.as_posix(), 'role': role, 'split': split,
-            'license': 'CC-BY-NC-SA-4.0', 'retrieved_at': datetime.now(timezone.utc).isoformat(),
+            'license': 'CC-BY-NC-SA-4.0', 'retrieved_at': existing.get(sid, {}).get('retrieved_at', datetime.now(timezone.utc).isoformat()),
             'sha256': digest, 'bytes': len(data), 'pages': len(PdfReader(target).pages),
             'parser_version': None, 'page_range': None, 'extraction_status': 'needs_review',
             'assets': [], 'restrictions': ['Noncommercial; share adaptations alike; see source for third-party exceptions.'],
