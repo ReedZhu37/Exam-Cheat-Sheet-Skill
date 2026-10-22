@@ -1,0 +1,85 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-10-22T01:16:43.044830+00:00",
+  "path_base": {
+    "repo_root": "freeze_parent",
+    "sheet": "freeze_parent",
+    "outputs": "sheet",
+    "input_paths": "repo_root",
+    "inputs": "repo_root",
+    "code_root": "repo_root",
+    "code_files": "repo_root"
+  },
+  "repo_root": "../..",
+  "sheet": "../../examples/mit-6041/v2",
+  "outputs": {
+    "cheatsheet-expanded.md": "d0dbca2fae20ada3a802385424adfe518dbdde35211dc9af116db2b7acffa513",
+    "cheatsheet-page-001.png": "df93a2066cb5c8a6282998f6d21832121c891cd99f8628c9fa6990bffade2947",
+    "cheatsheet-page-002.png": "809a3254b43b7a84abf005606496756894f210906a9be7af642fe5cae08b15a2",
+    "cheatsheet-page-003.png": "dd52c73df930083dcb1de1dfa846bff5b5cdd14ea565c2fe2369b7a141055cea",
+    "cheatsheet-page-004.png": "9ba4df0eb39719c77b251dc0e9a74070cf29f9efa7e0fc9847f22f96f0392b9c",
+    "cheatsheet-page-005.png": "beb5c84f1887d9e435644ba908fcce2beb46ef8f528ab835fba75516194490cd",
+    "cheatsheet-page-006.png": "de37caefc8c8a4dae55e3252bebfe383a62a657c51f1f127e82b9ab4bf8b2cac",
+    "cheatsheet.md": "541e462e0b5be1fd7505d531206e3d5617b3b10b7fdbac73be6a912efc9555a1",
+    "cheatsheet.pdf": "491f805948bee51bb5d9387a23d2760d94c93c0a66690461ca23525e7fe786d0",
+    "coverage-report.md": "806219d96487005d759cee4185f33dd231b2bad47819ba3d2db9b4fe66a0636e",
+    "priority-report.json": "a4f63c2dd390be343ec40fdb510bc71c04449a92d89392773d028581040e1426",
+    "render-report.json": "c6f22df875c036472c9a4817222556f8edc87be1dcdb37e0df8f3435f83ecaff",
+    "review-guide.md": "14a58c16dcc9d9b3eafba72fd9a29ceb22d50367678c1ac3b18424bfc10d714c",
+    "visual-review.md": "8b42de84e8d009e6214b229a071ba945610b441fade89ea79b79046de9045c19"
+  },
+  "input_paths": [
+    "examples/mit-6041/concepts-v1.json",
+    "examples/mit-6041/concepts-v2.json",
+    "examples/mit-6041/source-review.md",
+    "examples/mit-6041/revision-log.md",
+    "benchmarks/mit-6041-quiz1/downloads.json",
+    "benchmarks/mit-6041-quiz1/manifest.json",
+    "benchmarks/mit-6041-quiz1/dev-downloads.json",
+    "benchmarks/mit-6041-quiz1/protocol.md",
+    ".gitattributes"
+  ],
+  "inputs": {
+    "examples/mit-6041/concepts-v1.json": "c108b78a6cc63178b7505fc5af18e2c9909f252b2d2da99dede0f89b80169350",
+    "examples/mit-6041/concepts-v2.json": "10425c1b6791d0d51bb98022ff1cb8417d64c82fd4113319776ad5eb622e3a24",
+    "examples/mit-6041/source-review.md": "ce658d3997cc57267d625e42e98560ce3bfd2b9f9c45cac08b63b24fad0c2d14",
+    "examples/mit-6041/revision-log.md": "c71713ce58de5a2ed8e32a177d726d1d4314bff1206d7e6fc8d60ceaed099701",
+    "benchmarks/mit-6041-quiz1/downloads.json": "121266d454dcfd4647490cf7640ea07c4745e0993f95411197bcddaf599b76af",
+    "benchmarks/mit-6041-quiz1/manifest.json": "6efc81d150db6a9302e854bd5c7c83056743274b8cab6c3ff241365dd5ea1607",
+    "benchmarks/mit-6041-quiz1/dev-downloads.json": "3dd317cdd3b97324915228bd268efe93d156c22df652d7733f20507b3379ea0c",
+    "benchmarks/mit-6041-quiz1/protocol.md": "38906ab74391eba5a85447520b5d0b0264f6df928415a8e84fa471b8cfae3966",
+    ".gitattributes": "764cb551b972b0e4cffd2c211024424ecb2bdc98966effb58f0690ac1f4913eb"
+  },
+  "config": {
+    "budget_words": 3000,
+    "render": {
+      "max_pages": 6,
+      "min_font": 9
+    }
+  },
+  "code_root": "src/exam_cheat_sheet",
+  "code_files": {
+    "pyproject.toml": "38f4cace519be860be9cd7826d8e4aff9f2d2f217fbb58a7c5729052c218c11b",
+    "schemas/concept.schema.json": "8d35b5b7031395b46d81ea6827daef2dc18b458eaff4dd35c2e5448d2c08b4c9",
+    "schemas/exam-item.schema.json": "1653e8b3196248c2bf9b93c95e5ee12e1bf499aa03216430d3007cb6f8859d3a",
+    "schemas/manifest.schema.json": "87af15cd8288661b862d9e6ae7f2912fc440e1ff9f3a14f6e5508000f21c0fa5",
+    "scripts/fetch_benchmark.py": "1325497a260b3cd2e1a23afb3746baacdde2f097b9aef43f8b7a6125e76dce8f",
+    "scripts/grade_exam.py": "fc943708406ed04ab0b376a5387c155548e2ea2646a8911b14e4ff78e94883d7",
+    "scripts/ingest_benchmark.py": "5f19363ab967027f18b50eac01f1baaf793c4791984a62457e09b7a975718e0d",
+    "scripts/prepare_exam.py": "5e56e0ea52d21425cedb78c1ef78f8152a924ad123323d0d8577a707188b9445",
+    "scripts/revise_example.py": "0398ac9d726d3da03a2530397d45080578ad5b48ca1fcc8e9d980f7012ab5971",
+    "scripts/run_isolated.py": "923d57a1a41d60aeaed67aa5e8f353c050a01293cf532f3fe45f66d98f9ec65d",
+    "scripts/solve_exam.py": "c1efaab1f5ba031c851779c33feb1a6b00196f3e1cc499d531fea3fa8ed6c74b",
+    "scripts/summarize_results.py": "bd20d801519a888106e5af13c3fefc72324cb37a421d6174c1f5450bd65ede14",
+    "src/exam_cheat_sheet/__init__.py": "4ccf24a0dba1387d355192e4ea611e2d102ac60cbbad4890835fc00b6a3d3c64",
+    "src/exam_cheat_sheet/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/exam_cheat_sheet/cli.py": "7bee1f7eef9d009c8237121e5f2dd2c226ebc7100f46c214362278d928d602e6",
+    "src/exam_cheat_sheet/compile.py": "92700d3cb098d7766d26611e980b7d47e8819a3e249e2d39129ccadfd5997e98",
+    "src/exam_cheat_sheet/evaluate.py": "34037d11f8b3f6232f9373a1f572917b13947ba9825e9abd6a41364a830d7511",
+    "src/exam_cheat_sheet/ingest.py": "066c2fd654c0a7b8deeaad93e4946bc9361c79628edafac83de6448daafd8ced",
+    "src/exam_cheat_sheet/manifest.py": "db7b935d55f0ea3b9f6343a88c3bdc97ba722800e82dda0065bfaf44910d00e3",
+    "src/exam_cheat_sheet/render.py": "7ec80b6c63075d2cc0812f4f00a9cca36673dacf87c4fcbc5ac39cfa7a75827d",
+    "uv.lock": "5e3f094353fc358104dad9c80d7e29579514459fc37a5f9766134d3c83eabb72"
+  },
+  "code_version": "4425c76396ca378ff7c32647a2853dfa34ffb3f45eb26ae98e8826d3877810cb"
+}
