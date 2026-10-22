@@ -4,3 +4,6 @@
 *.jpg binary
 *.jpeg binary
 *.woff2 binary
+# Preserve exact acquired/generated evidence bytes for recorded SHA-256 hashes.
+benchmarks/** -text
+examples/** -text
