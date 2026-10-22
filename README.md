@@ -76,7 +76,7 @@ uv run python -m exam_cheat_sheet compile examples/mit-6041/concepts-v1.json --o
 ## 测试与边界
 
 ```sh
-uv run pytest -q --basetemp .local/pytest
+uv run pytest -q --basetemp .pytest-tmp
 ```
 
 支持 PDF、PPTX、DOCX、Markdown、纯文本。未承诺 OCR、手写识别、旧版 `.doc/.ppt`、

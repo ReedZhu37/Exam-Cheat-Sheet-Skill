@@ -13,4 +13,4 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - run: uv sync --locked
-      - run: uv run pytest -q --basetemp .local/pytest
+      - run: uv run pytest -q --basetemp .pytest-tmp
